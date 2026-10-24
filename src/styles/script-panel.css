@@ -1,0 +1,180 @@
+/* Test mode: the simulated candidate's floating panel. */
+.script-panel {
+  position: fixed;
+  z-index: 20;
+  width: 19rem;
+  max-width: calc(100vw - 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  background: var(--m-tile);
+  border: 1px solid #2a3547;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  color: var(--m-text);
+  font-size: 0.85rem;
+  transition: width 0.2s;
+}
+
+.script-panel.expanded {
+  width: 27rem;
+}
+
+.script-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: -0.8rem -0.8rem 0;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #2a3547;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.script-head:active {
+  cursor: grabbing;
+}
+
+.script-grip {
+  color: var(--m-muted);
+  letter-spacing: -0.15em;
+}
+
+.script-tag {
+  margin-left: auto;
+  padding: 0.05rem 0.45rem;
+  border-radius: 0.4rem;
+  background: rgba(42, 157, 120, 0.15);
+  color: var(--ink-bright);
+  font-size: 0.72rem;
+}
+
+.script-lengths {
+  align-self: flex-start;
+}
+
+.script-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.script-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.4rem 0.35rem 0.7rem;
+  border-radius: 0.5rem;
+  background: var(--m-btn);
+}
+
+.script-list li.active {
+  outline: 1px solid var(--ink-bright);
+}
+
+.script-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.script-play {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #145a45;
+  color: #fff;
+}
+
+.script-play:hover:not(:disabled) {
+  background: #22805f;
+}
+
+.script-play:disabled {
+  background: #2a3547;
+  color: var(--m-muted);
+  cursor: not-allowed;
+}
+
+.script-now {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.script-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--m-muted);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.script-progress {
+  height: 4px;
+  border-radius: 2px;
+  background: #2a3547;
+  overflow: hidden;
+}
+
+.script-progress div {
+  height: 100%;
+  background: var(--ink-bright);
+  transition: width 0.1s linear;
+}
+
+.script-text {
+  margin: 0;
+  max-height: 14rem;
+  overflow-y: auto;
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.25);
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.script-done {
+  color: #c4ccd6;
+}
+
+/* The sentence being read: the part already heard is brightest. */
+.script-text mark {
+  border-radius: 0.2rem;
+  background: rgba(42, 157, 120, 0.22);
+  color: #9fb3c8;
+}
+
+.script-heard {
+  color: #fff;
+}
+
+.script-next {
+  color: #5f6d7e;
+}
+
+.script-auto {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--m-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.script-auto input {
+  accent-color: var(--ink-bright);
+}
+
+.script-hint {
+  margin: -0.3rem 0 0;
+  color: var(--m-muted);
+  font-size: 0.78rem;
+}

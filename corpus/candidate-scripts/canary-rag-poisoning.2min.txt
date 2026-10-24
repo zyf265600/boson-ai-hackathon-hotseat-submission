@@ -1,0 +1,13 @@
+At the University of Waterloo, supervised by Professor Sebastian Fischmeister, I worked on a research project called The Canary in the Embedding Mine. It is about detecting retrieval poisoning attacks on LLM code generation, using what we call canary functions.
+
+The setting is RAG for code: before the model writes a function, it retrieves related documents and uses them as context. If an attacker can slip poisoned documents into that store, the model may copy unsafe patterns into the code it generates.
+
+To study this, I constructed a document store from OpenSSL and evaluated 58 adversarial documents across 14,218 C functions. OpenSSL is a good target because it is large, widely used, and security sensitive.
+
+I built a top-k vector retrieval pipeline using OpenAI's text-embedding-3-large and fine-tuned MPNet embeddings. With it I analyzed when poisoned documents get retrieved, how they displace clean documents, and how the ranking changes.
+
+Next I ran paired experiments: the same function generated once with a clean store and once with a poisoned one, using GPT-4.1 and GPT-5. I evaluated the generated functions through compilation, the OpenSSL unit tests, memory analysis and fuzz testing.
+
+My main contribution was the canary-function selection method. A canary is a function we keep generating and checking, so that if the store is manipulated, the canaries show it first. To choose them I used four features: code distance, function length, brace depth and fan-in.
+
+I fit a linear regression on those features to identify the functions most sensitive to document-store manipulation. Those functions become the canaries, so a poisoned store can be detected by watching a small set of functions instead of all of them.

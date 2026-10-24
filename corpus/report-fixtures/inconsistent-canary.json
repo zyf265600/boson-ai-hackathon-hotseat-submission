@@ -1,0 +1,84 @@
+{
+  "note": "Test fixture for npm run report: inconsistent-canary. expectBands lists the overall bands that count as a pass.",
+  "expectBands": ["practice", "nearly"],
+  "transcript": [
+    {
+      "speaker": "moderator",
+      "text": "Hello, and welcome. I'm joined by our Technical Lead and Mentor, and we're excited to hear about your work. Could you describe a technical project you've built, focusing on the problem, the architecture, and your specific contribution?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "At the University of Waterloo, supervised by Professor Sebastian Fischmeister, I researched retrieval poisoning attacks against RAG-based code generation. The question was whether poisoned documents in a retrieval store can push a model into generating bad code. I built an OpenSSL document store and evaluated 58 adversarial documents across 14,218 C functions. I also built a top-k vector retrieval pipeline with OpenAI's text-embedding-3-large and fine-tuned MPNet embeddings. Then I ran paired clean-versus-poisoned code generation experiments with GPT-4.1 and GPT-5, and checked the generated functions with compilation, the OpenSSL unit tests, memory analysis and fuzz testing. My main contribution was choosing canary functions: a linear regression on code distance, function length, brace depth and fan-in finds the functions most sensitive to a poisoned store."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "Thanks for the overview. Let's get started."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "How did you choose the four features for the canary regression?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "I started from what makes a function depend on retrieved context. Longer functions and deeper nesting give the model more places to copy a bad pattern, and fan-in tells you how many callers would be hit. Code distance is how close the function is to the poisoned documents in embedding space. I tried about ten features and kept the four with significant coefficients."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "Thanks for the detail."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "How many of the adversarial documents were actually retrieved for at least one function?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "Most of them. Out of the 120 adversarial documents, I think around 90 were retrieved at least once in the top five."
+    },
+    {
+      "speaker": "mentor",
+      "text": "That's completely fine. Let's move on."
+    },
+    {
+      "speaker": "mentor",
+      "text": "How did you check that watching the canaries caught a poisoned store sooner than checking every function?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "(no answer)"
+    },
+    {
+      "speaker": "moderator",
+      "text": "That's all from our panel today. Thank you so much for walking us through your project, and best of luck!"
+    }
+  ],
+  "questions": [
+    {
+      "round": 1,
+      "difficulty": "medium",
+      "speaker": "technical_lead",
+      "result": {
+        "question": "How did you choose the four features for the canary regression?"
+      }
+    },
+    {
+      "round": 2,
+      "difficulty": "medium",
+      "speaker": "technical_lead",
+      "result": {
+        "question": "How many of the adversarial documents were actually retrieved for at least one function?",
+        "assessment": "solid",
+        "reason": "Gives the reasoning behind each feature and how the four were kept."
+      }
+    },
+    {
+      "round": 3,
+      "difficulty": "medium",
+      "speaker": "mentor",
+      "result": {
+        "question": "How did you check that watching the canaries caught a poisoned store sooner than checking every function?",
+        "assessment": "inconsistent",
+        "reason": "earlier: 58 adversarial documents / now: 120 adversarial documents"
+      }
+    }
+  ]
+}

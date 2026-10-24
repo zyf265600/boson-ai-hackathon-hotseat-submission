@@ -1,0 +1,7 @@
+Most recently I was a backend software engineer intern at VividSeats, the ticket marketplace, in Toronto, from January to April 2025. I worked in Java, on services that run on Kubernetes and AWS, and most of my work was around search.
+
+A lot of our Algolia search traffic was for time-insensitive data, so it did not need a live query every time. I designed and built a multi-tiered SQLite caching layer in Java to offload those queries.
+
+That reduced request latency from about 250 milliseconds to 30 at p99, and it improved backend throughput. To roll it out safely, I used Argo Rollouts for canary deployments on Kubernetes, with production traffic increasing gradually.
+
+I also optimized our batch indexing. I restructured the pagination and the batching logic, and that cut CPU usage by over 60 percent, which improved our overall resource efficiency.

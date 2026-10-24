@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "composite": true,
+    "types": ["node"]
+  },
+  // shared/ holds what the server and the browser both use: the panel, seat names, Brain types.
+  "include": ["server", "shared", "corpus", "scripts"]
+}

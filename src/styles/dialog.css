@@ -1,0 +1,78 @@
+/* ---------- "Service unavailable" dialog ---------- */
+
+.dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(7, 9, 13, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+.dialog {
+  width: min(26rem, 100%);
+  padding: 2rem 1.75rem 1.5rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--l-border);
+  background: linear-gradient(180deg, #111a2b, #0c121c);
+  box-shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.9);
+  color: var(--l-text);
+  text-align: center;
+}
+
+.dialog-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  color: var(--navy-bright);
+  background: rgba(53, 99, 201, 0.12);
+  border: 1px solid rgba(53, 99, 201, 0.3);
+}
+
+.dialog h2 {
+  margin: 1rem 0 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.dialog p {
+  margin: 0.6rem 0 1.5rem;
+  line-height: 1.5;
+}
+
+/* The raw errors behind "service unavailable", so a failure is never a mystery. */
+.dialog-errors {
+  margin: -0.75rem 0 1.25rem;
+  max-height: 8rem;
+  overflow: auto;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.35);
+  color: #f28b82;
+  font-size: 0.75rem;
+  text-align: left;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.dialog-actions .test-join {
+  min-width: 0;
+  margin-top: 0;
+}
+
+.join:disabled,
+.test-join:disabled {
+  opacity: 0.6;
+  cursor: default;
+  transform: none;
+}

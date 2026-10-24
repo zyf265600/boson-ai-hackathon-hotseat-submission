@@ -1,0 +1,66 @@
+:root {
+  /* Palette: black, deep navy, ink green. */
+  --black: #07090d;
+  --navy: #0d1f48;
+  --navy-bright: #3563c9;
+  --ink: #0b3d30;
+  --ink-bright: #2a9d78;
+
+  /* Lobby and end screen */
+  --l-bg: var(--black);
+  --l-card: rgba(255, 255, 255, 0.035);
+  --l-text: #e9eef4;
+  --l-muted: #8e9bab;
+  --l-border: rgba(255, 255, 255, 0.08);
+  --brand: var(--navy-bright);
+  --brand-2: var(--ink-bright);
+
+  /* Call (Google Meet layout, in the same palette) */
+  --m-bg: var(--black);
+  --m-tile: #121926;
+  --m-tile-2: #0d131d;
+  --m-text: #e9eef4;
+  --m-muted: #8e9bab;
+  --m-btn: #1b2433;
+  --m-btn-hover: #253042;
+  --m-on: var(--ink-bright);
+  --m-red: #d93a3a;
+
+  font-family:
+    "Google Sans",
+    Roboto,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Every screen is dark: paint the page itself too, so scrolling past the top or
+   bottom (macOS rubber-band) shows the same black instead of a white edge. */
+html,
+body {
+  background: var(--black);
+  color-scheme: dark;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.muted {
+  color: var(--l-muted);
+  font-weight: 400;
+}

@@ -1,0 +1,16 @@
+Copyright (c) 2026 Yifei Zhang, Junwei Quan, Peize Zhang and Jingwen Zhong.
+All rights reserved.
+
+HotSeat was built for the Boson AI x MScAC Higgs Audio Hackathon 2026. No part of
+this repository may be copied, modified, distributed or used without the written
+permission of the copyright holders.
+
+Third-party code keeps its own license:
+
+- hotseat/src/audio/ and parts of hotseat/src/realtime/ are adapted from
+  higgs-realtime-tutorial by Boson AI (https://github.com/boson-ai/higgs-realtime-tutorial),
+  licensed under the Apache License, Version 2.0. Its license text is in
+  hotseat/src/audio/LICENSE; the files there were modified for HotSeat.
+- Packages installed through npm are under their own licenses.
+- Photos on the home page are from Unsplash (credited on the page), under the
+  Unsplash License.

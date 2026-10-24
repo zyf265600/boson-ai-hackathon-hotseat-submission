@@ -1,0 +1,7 @@
+From January to December 2025 I worked in Professor Werner Dietl's Engineering Intelligent Software and Programming Languages group at the University of Waterloo, on the Checker Framework.
+
+The Checker Framework is a compiler extension framework for type systems and static analysis in Java, used by the Java community. My focus was the performance of one of its checkers, the Nullness Checker, which checks at compile time that a program never dereferences a null value.
+
+I ran empirical studies with detailed profiling to find computations the checker was repeating without need, and removed them. That improved the precision and the scalability of the static analysis.
+
+I also contributed to refactoring and benchmarking work that made the framework's analysis pipeline more modular, and easier to maintain for future compiler extensions. The habit I kept from this project is to profile first, and change the code second.

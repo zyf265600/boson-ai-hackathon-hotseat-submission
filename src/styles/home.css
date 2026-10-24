@@ -1,0 +1,426 @@
+/* ---------- Home page ("/") ---------- */
+/* One pinned, full-screen stage. Each scene holds until the scroll crosses into
+   the next (useScrollScene), then the next one cuts in; from there to its stop
+   the scroll brings it into focus (below). Photos are blown up past the screen
+   edges, turned black and white and tinted blue-cyan; text is plain, no cards. */
+
+/* One scroll stop per scene. */
+html.snap {
+  scroll-snap-type: y mandatory;
+}
+
+.home {
+  background: #000;
+  /* The lobby clips its overflow; here that would stop the stage from sticking. */
+  overflow: visible;
+}
+
+.home .brand,
+.lobby .brand {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-track {
+  position: relative;
+}
+
+.home-stop {
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 100svh;
+  scroll-snap-align: start;
+  pointer-events: none;
+}
+
+.home-stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  background: #02070c;
+}
+
+/* ---------- Scenes ---------- */
+
+.home-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  align-content: center;
+  padding: 6rem max(1.5rem, 6vw) 5rem;
+  opacity: 0;
+  visibility: hidden;
+  /* The cut: at most 100 ms, never tied to the scroll position. */
+  transition:
+    opacity 100ms linear,
+    visibility 0s linear 100ms;
+}
+
+/* How far the scroll has brought this scene in, 0 to 1. --progress (window heights
+   scrolled, from useScrollScene) reaches --scene at the scene's stop; the scene cuts
+   in half a window earlier. --focus runs over that whole half window (the photo),
+   --rise over its last 0.4 (the text, a little behind). Scrolling back reverses both. */
+.home-scene {
+  --focus: clamp(0, (var(--progress, 0) - var(--scene)) * 2 + 1, 1);
+  --rise: clamp(0, (var(--progress, 0) - var(--scene)) * 2.5 + 1, 1);
+}
+
+.home-scene[data-active="true"] {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 100ms linear,
+    visibility 0s;
+}
+
+.home-scene.align-center {
+  justify-items: center;
+  text-align: center;
+}
+
+.home-scene.align-left {
+  justify-items: start;
+  text-align: left;
+}
+
+.home-scene.align-right {
+  justify-items: end;
+  text-align: left;
+}
+
+/* The figure: the photo scaled up past the edges (transform set per scene), in black and white. */
+.home-figure {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(1) contrast(1.15) brightness(0.82);
+  will-change: transform;
+}
+
+/* Every scene but the first: the photo comes into focus. */
+.home-figure.focusing {
+  filter: grayscale(1) contrast(1.15) brightness(0.82) blur(calc((1 - var(--focus)) * 18px));
+  will-change: transform, filter;
+}
+
+/* Blue-cyan tint over the black and white photo, then a darkening layer for the text. */
+.home-scene::before,
+.home-scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.home-scene::before {
+  z-index: -2;
+  background: linear-gradient(160deg, #0b7fa8 0%, #0a5d86 55%, #08465f 100%);
+  mix-blend-mode: color;
+}
+
+.home-scene::after {
+  z-index: -1;
+  background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(2, 14, 24, 0.3), rgba(2, 14, 24, 0.72) 100%),
+    linear-gradient(180deg, rgba(2, 12, 20, 0.55), rgba(2, 12, 20, 0.15) 40%, rgba(2, 12, 20, 0.7));
+}
+
+.home-scene.align-left::after {
+  background: linear-gradient(90deg, rgba(2, 12, 20, 0.85), rgba(2, 12, 20, 0.35) 55%, rgba(2, 12, 20, 0.15)),
+    linear-gradient(180deg, rgba(2, 12, 20, 0.5), transparent 40%, rgba(2, 12, 20, 0.6));
+}
+
+.home-scene.align-right::after {
+  background: linear-gradient(270deg, rgba(2, 12, 20, 0.85), rgba(2, 12, 20, 0.35) 55%, rgba(2, 12, 20, 0.15)),
+    linear-gradient(180deg, rgba(2, 12, 20, 0.5), transparent 40%, rgba(2, 12, 20, 0.6));
+}
+
+/* ---------- Header, scene dots, footer (on top of every scene) ---------- */
+
+.home-stage > .lobby-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  gap: 1.5rem;
+}
+
+.home-nav {
+  display: flex;
+  gap: 1.75rem;
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.home-nav a {
+  color: rgba(233, 238, 244, 0.75);
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.home-nav a:hover {
+  color: #fff;
+}
+
+.home-dots {
+  position: absolute;
+  z-index: 3;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.home-dots button {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.3);
+  transition:
+    height 0.15s,
+    background 0.15s;
+}
+
+.home-dots button.on {
+  height: 1.4rem;
+  background: #7fd3e3;
+}
+
+.home-footer {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: min(100%, 60rem);
+  padding: 1.25rem 1rem 1.5rem;
+  text-align: center;
+  color: rgba(211, 227, 234, 0.6);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.home-footer a {
+  color: inherit;
+}
+
+.home-stage .waveform {
+  top: auto;
+  bottom: 6vh;
+  height: 9rem;
+  z-index: 1;
+}
+
+/* ---------- Hero (scene 1) ---------- */
+
+.home-hero-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.home-hero {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding-bottom: 6vh;
+}
+
+/* Two lines, all white except "real one.": "Take the hot seat" / "before the real one." */
+.home-hero h1 .line {
+  display: block;
+}
+
+.home-hero h1 {
+  max-width: 14em;
+  font-size: clamp(2.6rem, 5.5vw, 4.6rem);
+  color: #fff;
+}
+
+.home-hero .lobby-lede {
+  max-width: 38rem;
+  margin: 1.5rem auto 2.25rem;
+  color: #d3e3ea;
+}
+
+.home-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 1.75rem;
+}
+
+.join.step-out {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.05rem 2.4rem;
+  font-size: 1.08rem;
+}
+
+.step-out span {
+  transition: transform 0.15s;
+}
+
+.step-out:hover span {
+  transform: translateX(3px);
+}
+
+.join:focus-visible,
+.home-nav a:focus-visible,
+.home-secondary:focus-visible,
+.home-footer a:focus-visible,
+.home-dots button:focus-visible {
+  outline: 2px solid #7fd3e3;
+  outline-offset: 3px;
+}
+
+.home-secondary {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  padding-bottom: 2px;
+}
+
+.home-secondary:hover {
+  border-color: #7fd3e3;
+}
+
+/* ---------- Text scenes ---------- */
+
+.home-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 44rem;
+  display: grid;
+  gap: 1.1rem;
+}
+
+.align-center .home-copy {
+  justify-items: center;
+}
+
+.home-kicker {
+  margin: 0;
+  color: #7fd3e3;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.home h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  color: #fff;
+}
+
+/* "100+" above "interviewers to choose from.": the panel scene's number, much larger than the heading. */
+.home h2 .home-stat {
+  display: block;
+  font-size: clamp(5.5rem, 14vw, 11rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  /* Room under the digits, so the text below does not touch them. */
+  padding-bottom: 0.08em;
+  /* Plain white, like the heading (user, 2026-10-23: not blue). */
+  color: #fff;
+}
+
+.home-copy p:not(.home-kicker) {
+  margin: 0;
+  max-width: 38rem;
+  color: #d3e3ea;
+  font-size: clamp(1.02rem, 1.4vw, 1.2rem);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+/*
+ * At most two sentences per scene (Home.tsx Lines): each starts on a new line,
+ * and one too long for a line wraps into two even lines rather than leaving a
+ * lone word on the second.
+ */
+.home-lines {
+  display: grid;
+  gap: 0.15em;
+}
+
+/* Wide enough for a 70-character sentence on one line. */
+.home-copy p.home-lines {
+  max-width: 44rem;
+}
+
+.home-lines > span {
+  text-wrap: balance;
+}
+
+.home-copy .home-note {
+  color: rgba(211, 227, 234, 0.7);
+  font-size: 0.9rem;
+}
+
+.home-copy .step-out {
+  margin-top: 1rem;
+}
+
+/* Every scene's text but the first and last: it rises from below and fades in. */
+.home-copy.rising {
+  opacity: var(--rise);
+  transform: translateY(calc((1 - var(--rise)) * 4rem));
+  will-change: transform, opacity;
+}
+
+/* No cut animation, no focus and no rising text when the system asks for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  .home-scene,
+  .home-scene[data-active="true"] {
+    transition: none;
+    --focus: 1;
+    --rise: 1;
+  }
+}
+
+@media (max-width: 860px) {
+  .home-nav {
+    display: none;
+  }
+
+  .home-scene {
+    padding: 5rem 1.25rem 4rem;
+  }
+
+  .home-scene.align-left,
+  .home-scene.align-right {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .home-scene.align-left .home-copy,
+  .home-scene.align-right .home-copy {
+    justify-items: center;
+  }
+
+  .home-dots {
+    display: none;
+  }
+}

@@ -1,0 +1,7 @@
+At the University of Waterloo, supervised by Professor Sebastian Fischmeister, I researched retrieval poisoning attacks against RAG-based code generation. The question was whether poisoned documents in a retrieval store can push a model into generating bad code.
+
+I built an OpenSSL document store and evaluated 58 adversarial documents across 14,218 C functions. I also built a top-k vector retrieval pipeline with OpenAI's text-embedding-3-large and fine-tuned MPNet embeddings.
+
+Then I ran paired clean-versus-poisoned code generation experiments with GPT-4.1 and GPT-5, and checked the generated functions with compilation, the OpenSSL unit tests, memory analysis and fuzz testing.
+
+My main contribution was choosing canary functions: a linear regression on code distance, function length, brace depth and fan-in finds the functions most sensitive to a poisoned store.

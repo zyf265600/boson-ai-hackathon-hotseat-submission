@@ -1,0 +1,6 @@
+logs/
+dist/
+package-lock.json
+corpus/candidate-scripts/
+src/audio/LICENSE
+*.md

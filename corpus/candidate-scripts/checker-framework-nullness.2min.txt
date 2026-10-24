@@ -1,0 +1,15 @@
+From January to December 2025 I worked in Professor Werner Dietl's Engineering Intelligent Software and Programming Languages group at the University of Waterloo. My project was performance optimization of the Checker Framework.
+
+The Checker Framework is a compiler extension framework for type systems and static analysis in Java. It plugs into the Java compiler, so developers get extra checks every time they compile, and it directly supports the Java community.
+
+One of its best known checkers is the Nullness Checker. It checks at compile time that the program does not dereference a null value, so a whole class of null pointer exceptions is caught before the code ever runs.
+
+Because these checks run on every compile, their speed matters a lot. A slow checker slows down every developer who uses it, and it limits how large a codebase the analysis can handle. That is why my project focused on performance.
+
+In practice the work was a loop. Profile the checker on a benchmark, find where the time goes, ask whether that work is really needed, change it, and then run the benchmarks again to confirm the result.
+
+My work was mostly empirical. I profiled the Nullness Checker in detail to see where its time went, and found computations it was doing more than once without need. I removed those redundant computations, which improved the precision and the scalability of the static analysis.
+
+I also contributed to refactoring and benchmarking efforts on the framework's analysis pipeline. The goal was to make the pipeline more modular and maintainable, so future compiler extensions can build on it more easily.
+
+The main lesson for me was to profile first and change code second. Measuring before guessing showed where the real cost was, and benchmarking afterwards showed whether each change actually helped.

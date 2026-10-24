@@ -1,0 +1,84 @@
+{
+  "note": "Test fixture for npm run report: vague-checker. expectBands lists the overall bands that count as a pass.",
+  "expectBands": ["practice", "redo"],
+  "transcript": [
+    {
+      "speaker": "moderator",
+      "text": "Hello, and welcome. I'm joined by our Technical Lead and Mentor, and we're excited to hear about your work. Could you describe a technical project you've built, focusing on the problem, the architecture, and your specific contribution?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "From January to December 2025 I worked in Professor Werner Dietl's Engineering Intelligent Software and Programming Languages group at the University of Waterloo, on the Checker Framework. The Checker Framework is a compiler extension framework for type systems and static analysis in Java, used by the Java community. My focus was the performance of one of its checkers, the Nullness Checker, which checks at compile time that a program never dereferences a null value. I ran empirical studies with detailed profiling to find computations the checker was repeating without need, and removed them. That improved the precision and the scalability of the static analysis. I also contributed to refactoring and benchmarking work that made the framework's analysis pipeline more modular, and easier to maintain for future compiler extensions. The habit I kept from this project is to profile first, and change the code second."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "Thanks for the overview. Let's get started."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "When you profiled the Nullness Checker, where did most of its time go?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "So, um, it was mostly in the analysis part. The dataflow stuff takes a lot of time, you know. We looked at the profiler output and there were some hot spots, and we fixed those. It was a pretty big improvement overall."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "Okay."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "When you removed those repeated computations, how did you make sure the checker still reported the same errors?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "Yeah, we ran the tests. The framework has a lot of tests, so if something broke the tests would catch it. I think it was fine."
+    },
+    {
+      "speaker": "mentor",
+      "text": "That's completely fine."
+    },
+    {
+      "speaker": "mentor",
+      "text": "What would you work on next to make the checker faster?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "Um, I'd probably keep profiling and find more stuff to optimize. Maybe caching. There's always more to do with performance."
+    },
+    {
+      "speaker": "moderator",
+      "text": "That's all from our panel today. Thank you so much for walking us through your project, and best of luck!"
+    }
+  ],
+  "questions": [
+    {
+      "round": 1,
+      "difficulty": "medium",
+      "speaker": "technical_lead",
+      "result": {
+        "question": "When you profiled the Nullness Checker, where did most of its time go?"
+      }
+    },
+    {
+      "round": 2,
+      "difficulty": "medium",
+      "speaker": "technical_lead",
+      "result": {
+        "question": "When you removed those repeated computations, how did you make sure the checker still reported the same errors?",
+        "assessment": "vague",
+        "reason": "No specific hot spot, number, or mechanism; only 'some hot spots' and 'a big improvement'."
+      }
+    },
+    {
+      "round": 3,
+      "difficulty": "medium",
+      "speaker": "mentor",
+      "result": {
+        "question": "What would you work on next to make the checker faster?",
+        "assessment": "vague",
+        "reason": "Says the tests would catch problems, but not which tests or whether results were compared."
+      }
+    }
+  ]
+}

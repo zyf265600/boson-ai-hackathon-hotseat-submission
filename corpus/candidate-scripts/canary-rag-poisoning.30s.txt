@@ -1,0 +1,3 @@
+At Waterloo I researched retrieval poisoning in RAG-based code generation. I built an OpenSSL document store and a top-k retrieval pipeline with text-embedding-3-large and a fine-tuned MPNet, then tested 58 adversarial documents across 14,218 C functions.
+
+My main contribution was picking canary functions: a linear regression on code distance, function length, brace depth, and fan-in finds the functions most sensitive to a poisoned store.

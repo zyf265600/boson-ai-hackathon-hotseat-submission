@@ -1,0 +1,99 @@
+/* ---------- 3-2-1 before the call (src/ui/Countdown.tsx) ---------- */
+
+.countdown {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 45%, rgba(53, 99, 201, 0.2), transparent 38%), rgba(6, 8, 12, 0.55);
+  backdrop-filter: blur(24px) saturate(1.1);
+  -webkit-backdrop-filter: blur(24px) saturate(1.1);
+  animation: countdown-in 0.4s ease-out;
+}
+
+/* The number's box; the perspective lets the number come from far away. */
+.countdown-dial {
+  display: grid;
+  place-items: center;
+  perspective: 900px;
+}
+
+/*
+ * Each second: the number starts small and far away, comes forward to full size,
+ * keeps coming and grows past the viewer, fading as it goes.
+ */
+.countdown-number {
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 10rem;
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  /* The theme's blue and green, lifted a little so they read on the dark, blurred meeting. */
+  background: linear-gradient(150deg, #b4cbff 10%, #5b8df0 45%, #3fc59a 92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: countdown-fly 1s cubic-bezier(0.3, 0.1, 0.4, 1) both;
+}
+
+.countdown-label {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+@keyframes countdown-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes countdown-fly {
+  0% {
+    opacity: 0;
+    transform: translateZ(-1600px);
+    filter: blur(6px);
+  }
+  15% {
+    opacity: 0.6;
+  }
+  45% {
+    opacity: 1;
+    transform: translateZ(0);
+    filter: blur(0) drop-shadow(0 0 22px rgba(53, 99, 201, 0.55));
+  }
+  70% {
+    opacity: 1;
+    transform: translateZ(140px);
+    filter: blur(0) drop-shadow(0 0 22px rgba(42, 157, 120, 0.5));
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(680px);
+    filter: blur(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .countdown-number {
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .countdown {
+    gap: 2.75rem;
+  }
+
+  .countdown-number {
+    font-size: 7rem;
+  }
+}

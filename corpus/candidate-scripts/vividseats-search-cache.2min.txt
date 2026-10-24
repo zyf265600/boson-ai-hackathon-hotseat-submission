@@ -1,0 +1,15 @@
+Most recently I was a backend software engineer intern at VividSeats, the ticket marketplace, in Toronto, from January to April 2025. I worked in Java, on services that run on Kubernetes and AWS, and most of my work was around search.
+
+Our search is powered by Algolia. When we looked at the traffic, a large share of the queries were for time-insensitive data, things that do not change from one minute to the next. Sending every one of those to Algolia as a live query was slow, and it was wasted work.
+
+So I designed and implemented a multi-tiered SQLite caching layer in Java. Requests for that kind of data are answered from the cache tiers first, and only fall through to Algolia when the cache cannot answer them.
+
+Fresh data still goes to Algolia live, and the repeated, stable queries move off that path.
+
+The result was that request latency dropped from about 250 milliseconds to around 30 milliseconds at p99, and backend throughput improved, because far fewer requests were waiting on the search service.
+
+Because this sat in front of search, I did not want to switch it on for everyone at once. I used Argo Rollouts to do canary deployments on Kubernetes, so the new version took a small share of production traffic first, and the share grew gradually while we checked reliability and performance.
+
+My second project was batch indexing, the job that pushes our data into the search index. I restructured its pagination and batching logic, and that reduced CPU utilization by over 60 percent, which improved our overall resource efficiency.
+
+What I took away from the internship is to measure before and after every change, and to roll changes out gradually, so that a problem shows up on a small slice of traffic instead of on everyone.

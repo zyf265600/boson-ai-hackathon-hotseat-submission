@@ -1,0 +1,26 @@
+/* ---------- Call controls (shared) ---------- */
+
+.round {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: var(--m-text);
+  background: var(--m-btn);
+  transition: background 0.15s;
+}
+
+.round:hover {
+  background: var(--m-btn-hover);
+}
+
+.round.off {
+  background: var(--m-red);
+  color: #fff;
+}
+
+.round.on {
+  background: var(--m-on);
+  color: var(--black);
+}

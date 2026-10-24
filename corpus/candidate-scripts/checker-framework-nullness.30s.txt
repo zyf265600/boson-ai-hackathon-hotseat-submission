@@ -1,0 +1,3 @@
+I worked in Professor Werner Dietl's group at Waterloo on the Checker Framework, a Java compiler extension for type systems and static analysis. My focus was the performance of the Nullness Checker.
+
+I profiled the checker in detail to find computations it was repeating without need, and removed them, which improved the precision and scalability of the analysis. I also helped refactor and benchmark the pipeline so it is more modular for future checkers.

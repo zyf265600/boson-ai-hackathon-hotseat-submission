@@ -1,0 +1,3 @@
+Most recently I was a backend intern at VividSeats. Much of our Algolia search traffic was for time-insensitive data that did not need a live query.
+
+I built a multi-tiered SQLite caching layer in Java to offload those queries, cutting p99 latency from about 250 milliseconds to 30. I also restructured batch indexing, which cut CPU usage by over 60 percent.

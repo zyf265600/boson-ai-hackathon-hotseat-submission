@@ -1,0 +1,10 @@
+{
+  "sourceHash": "5967ddcbfae1c752a07720922178bca003c49b2645435e53a70c5216fc95e3eb",
+  "seconds": 22.667,
+  "take": 7,
+  "stretch": [
+    41.042,
+    52.417
+  ],
+  "rule": "one stretch of one take, forward then backward; mouth closed (teeth < 0.3, lip gap < 0.02, ±3 frames); least head motion"
+}

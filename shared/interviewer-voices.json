@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "educational-v08",
+    "voice": "voice_9c236f6582c7fd673066f0b00cf66406c0e2c07f8a4613b0b46e90eb301260ca",
+    "name": "The Reassuring Test-Prep Coach",
+    "gender": "female",
+    "age": 30,
+    "country": "United States",
+    "personality": "calm",
+    "description": "A composed female academic coach in her early 30s with a Mexican-American accent. Crisp, professional audio with a clear, confident mid-pitch and a brisk yet calming pace. Her tone is supportive and focused, easing anxiety while keeping students motivated.",
+    "refText": "Take a deep breath — you've prepared for this. Let's review the three key strategies that will help you stay calm and manage your time during the exam.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/educational-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/educational_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/educational_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/educational_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/educational_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "yuppie-v07",
+    "voice": "voice_a7070f554734c2a3b70003d27a0ab458319645cbebed1e4c6a19b8c18d729d54",
+    "name": "The Toronto Fintech Smooth-Talker",
+    "gender": "male",
+    "age": 30,
+    "country": "Canada",
+    "personality": "calm",
+    "description": "A composed Canadian man in his early 30s with a clean, polite Toronto accent and a warm, measured pace. His voice is smooth and medium-pitched with a reassuring, professional polish that makes complex finance sound effortlessly approachable. He blends ambition with that signature Canadian friendliness. Crisp, broadcast-grade audio.",
+    "refText": "So basically, we're democratizing wealth management—no jargon, no gatekeeping, just a clean app that actually respects your time. Grabbed a cortado at the office this morning and honestly couldn't be more pumped about the roadmap.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/yuppie-v07-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/yuppie_f007_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/yuppie_f007_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/yuppie_f007_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/yuppie_f007_art_wu.jpg"
+    }
+  },
+  {
+    "id": "executive-v08",
+    "voice": "voice_e02b55c5dd58f90ce0e6857946a456ff3db4ffdca19242fd87f7998456f2a0d5",
+    "name": "The Toronto Pragmatist",
+    "gender": "male",
+    "age": 50,
+    "country": "Canada",
+    "personality": "calm",
+    "description": "A grounded male executive in his early 50s with a neutral Canadian accent. His voice is steady and reassuring, with a medium pitch and pristine audio clarity. He speaks at a calm, even pace with a friendly, no-nonsense directness. His tone projects reliability, fairness, and the quiet competence of a leader who delivers on every promise.",
+    "refText": "Thanks for joining today. We had a solid quarter, but I want us to stay humble and focused. Steady execution beats flashy promises every single time.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/executive-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/executive_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/executive_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/executive_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/executive_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "patient-v05",
+    "voice": "voice_22692f6211832fe9c44a5419f0c5d01f91de73e9a9f5f4cdc63c1d2d60038205",
+    "name": "The Pragmatic Professional",
+    "gender": "female",
+    "age": 40,
+    "country": "United Kingdom (England)",
+    "personality": "calm",
+    "description": "A woman in her early 40s with a composed, articulate voice and a refined British accent. She speaks at a measured, efficient pace, asking pointed questions with calm authority. Her timbre is smooth and controlled, masking quiet concern. Crisp, professional audio quality.",
+    "refText": "I'd like to understand the full picture, if you don't mind. What are the treatment options, the success rates, and the likely impact on my work schedule? I prefer to make decisions with all the facts in front of me.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/patient-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/patient_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/patient_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/patient_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/patient_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "business-man-v00",
+    "voice": "voice_688aeb7d8d0b95d1af78baf579686211289fce949fe536372a07562823882763",
+    "name": "The Global Negotiator",
+    "gender": "male",
+    "age": 40,
+    "country": "United Kingdom (England)",
+    "personality": "calm",
+    "description": "A polished male executive in his mid-40s with a crisp British Received Pronunciation accent and pristine studio audio quality. His voice is a smooth mid-baritone, measured and deliberate, with impeccable enunciation. His tone is diplomatic and reassuring, projecting calm authority and the seasoned poise of a veteran dealmaker.",
+    "refText": "Good afternoon, everyone. Before we finalise the terms, let me assure you that our proposal has been crafted with mutual benefit firmly in mind. I believe that when both parties understand one another's priorities, even the most complex negotiation becomes remarkably straightforward.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/business-man-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/business-man_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/business-man_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/business-man_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/business-man_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "straightforward-v00",
+    "voice": "voice_1c09c7d1b5bb4214cfb8303835292b908805d1abd5c2ae4519a31e0f030502f0",
+    "name": "The Composed Receptionist",
+    "gender": "female",
+    "age": 20,
+    "country": "Australia",
+    "personality": "calm",
+    "description": "A female voice in her late 20s with pristine studio recording quality. Light Australian accent with a smooth, mid-pitched timbre and a polished, welcoming tone. Speaks at a relaxed, even pace with crisp articulation. The voice feels professional yet personable, ideal for greetings, customer service lines, and announcements.",
+    "refText": "Thank you for calling Meridian Services. Your call is important to us, and a representative will be with you shortly. In the meantime, please have your account number ready.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/straightforward-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/straightforward_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/straightforward_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/straightforward_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/straightforward_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "measured-v09",
+    "voice": "voice_1d56cc98c8e26cac9728765c2723e41b2bafe66d43c81984b40b0a1b0afa37a7",
+    "name": "The Measured Science Communicator",
+    "gender": "male",
+    "age": 30,
+    "country": "New Zealand",
+    "personality": "calm",
+    "description": "A calm male voice in his mid-30s with crisp, modern studio audio. He speaks with a neutral New Zealand accent, his pitch medium and his tone clear and considered. His pacing is steady and methodical, pausing to let complex ideas land. His tone is curious, precise, and quietly engaging.",
+    "refText": "Before we draw any conclusions, let us examine the evidence carefully and without bias. Science rewards the patient mind, the one willing to question its own assumptions. Let us proceed, one careful step at a time.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/measured-v09-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/measured_f009_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/measured_f009_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/measured_f009_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/measured_f009_art_wu.jpg"
+    }
+  },
+  {
+    "id": "emergency-alert-v03",
+    "voice": "voice_cff929689fd6f2e5e73f92ecd6b47e9a5eae6563725c42f2243a6fa9a3697eca",
+    "name": "The Composed Indian Broadcaster",
+    "gender": "female",
+    "age": 30,
+    "country": "India",
+    "personality": "calm",
+    "description": "A female emergency alert broadcaster in her 30s with a polished Indian English accent and excellent audio clarity. Bright mid-range timbre with precise, rhythmic articulation. Speaking at a measured, deliberate pace. The tone is professional and composed, projecting calm authority and trustworthiness.",
+    "refText": "This is an important public safety announcement. A cyclone warning has been issued for coastal areas. Please move inland to designated shelters without delay. Carry only essential items and stay together as families.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/emergency-alert-v03-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/emergency-alert_f003_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/emergency-alert_f003_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/emergency-alert_f003_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/emergency-alert_f003_art_wu.jpg"
+    }
+  },
+  {
+    "id": "trustworthy-v01",
+    "voice": "voice_3084f4690f574e582f49aae63f0c6e27e01e4e055bf4516195d8b5e5de11fb99",
+    "name": "The Trusted Indian Physician",
+    "gender": "male",
+    "age": 40,
+    "country": "India",
+    "personality": "calm",
+    "description": "A reassuring male voice in his late 40s with a refined Indian English accent. He speaks at a measured, deliberate pace with a smooth, resonant tone and crisp articulation. His delivery is authoritative yet kind, instilling confidence in medical and wellness matters. Excellent, clean audio quality.",
+    "refText": "Let me explain your results clearly, so there is no confusion. Everything we discuss is grounded in evidence, and my only concern is your wellbeing. Please feel free to ask me anything.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/trustworthy-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/trustworthy_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/trustworthy_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/trustworthy_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/trustworthy_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "knowledgeable-v00",
+    "voice": "voice_52163caccc1d7f909566ff7731d89560046f4b628ca333d352254ea43ea94369",
+    "name": "The Methodical Japanese Scholar",
+    "gender": "male",
+    "age": 40,
+    "country": "Japan",
+    "personality": "calm",
+    "description": "A composed male academic in his late 40s with a refined Japanese accent speaking precise English. His mid-range voice is calm and deliberate, with careful articulation and thoughtful pauses that invite reflection. The tone conveys quiet authority and respect for detail, delivered at an unhurried pace. Pristine studio-quality recording with clean, neutral warmth.",
+    "refText": "Today we will examine the principles of sustainable engineering, one concept at a time. Notice how each design decision builds upon the last, creating a structure that is both elegant and resilient. Let us begin slowly, so that nothing is lost.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/knowledgeable-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/knowledgeable_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/knowledgeable_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/knowledgeable_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/knowledgeable_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "teacher-v01",
+    "voice": "voice_bc819326777fc6b5daafabd435f36df0fcd76aba7c106d1cc506464497094904",
+    "name": "Mei Lin - Gentle Mandarin-Accented Tutor",
+    "gender": "female",
+    "age": 20,
+    "country": "China",
+    "personality": "calm",
+    "description": "A young female voice in her late 20s with a soft Mandarin-Chinese accent in her English. Crisp, clear digital recording with a bright, light timbre and a calm, deliberate pace. Her personality is patient and nurturing, perfect for language lessons and primary-school explainers.",
+    "refText": "Hello, class. Let us practice our new vocabulary words together, slowly and clearly. Repeat after me, and don't worry if you make a mistake — that is how we learn.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/teacher-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/teacher_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/teacher_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/teacher_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/teacher_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "bazaar-v09",
+    "voice": "voice_6acaca67d36a647d53c853da91960ce0a8a3517a053ba8bb70582441406790a9",
+    "name": "The Refined Silk Importer",
+    "gender": "female",
+    "age": 40,
+    "country": "China",
+    "personality": "calm",
+    "description": "An elegant woman in her late 40s with a polished Mandarin-inflected accent, speaking with poised sophistication. Her voice is smooth, mid-to-low pitched, and softly resonant, with graceful, deliberate phrasing. She speaks at a calm, measured pace with quiet confidence. Immaculate studio audio with silky clarity.",
+    "refText": "Feel the weight of this silk — light as morning mist, yet it took the labor of ten thousand silkworms and the patience of a season. True luxury is never loud.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/bazaar-v09-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/bazaar_f009_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/bazaar_f009_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/bazaar_f009_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/bazaar_f009_art_wu.jpg"
+    }
+  },
+  {
+    "id": "boss-v00",
+    "voice": "voice_0f9708237f0e1beccf4f5ca4e5b3036461b0382883d66af080eedf4b10b6a74b",
+    "name": "The Velvet Negotiator",
+    "gender": "male",
+    "age": 50,
+    "country": "Nigeria",
+    "personality": "calm",
+    "description": "A smooth male executive in his early 50s with a refined Lagos-inflected Nigerian accent and a warm, baritone voice. He speaks at an unhurried, deliberate pace with persuasive charm, every word measured to disarm and command. Pristine studio audio with a rich, honeyed timbre that radiates quiet authority.",
+    "refText": "Sit down, my friend, and let us talk like reasonable people. I did not build this company by raising my voice—I built it by knowing exactly when to lower it. Give me your numbers, and I will show you where the real opportunity lies.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/boss-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/boss_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/boss_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/boss_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/boss_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "dependable-v00",
+    "voice": "voice_925f4c9b104060bf578dfac9d196d41f58e11ec2e04e2ae8b80db793ee4e1533",
+    "name": "The Steadfast Nairobi Mentor",
+    "gender": "male",
+    "age": 40,
+    "country": "Kenya",
+    "personality": "calm",
+    "description": "A male voice in his mid-40s with a warm, melodic Kenyan accent and pristine studio recording. He speaks at a measured, grounded pace with a deep, resonant timbre. His tone radiates patience and unwavering dependability, like a teacher who has guided many and never lets anyone down.",
+    "refText": "Take a breath, my friend. I have walked this road before, and I promise you we will walk it together until the end. Whatever comes, I will not turn away.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/dependable-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/dependable_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/dependable_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/dependable_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/dependable_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "salesperson-v09",
+    "voice": "voice_c4da6e2013839964d98ee677382b80e33a60cb307761914061bf9d366e1bf6de",
+    "name": "The Distinguished South African Executive",
+    "gender": "male",
+    "age": 40,
+    "country": "South Africa",
+    "personality": "calm",
+    "description": "A man in his late 40s with a polished South African accent and rich studio audio. His voice is deep and resonant, with a measured, authoritative pace and a calm gravitas. His personality is composed and credible, the seasoned executive who closes high-stakes deals with quiet confidence and impeccable professionalism.",
+    "refText": "Good day. I appreciate the opportunity to speak with you, because I believe what we offer aligns perfectly with where your business is heading. Allow me to walk you through the numbers, and you'll see precisely why this matters.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/salesperson-v09-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/salesperson_f009_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/salesperson_f009_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/salesperson_f009_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/salesperson_f009_art_wu.jpg"
+    }
+  },
+  {
+    "id": "health-factility-v03",
+    "voice": "voice_5d79142fb085d6d8dc3fe71ec7cf812952fb981d5444a3909d68a29837fa4a4c",
+    "name": "The Calm Night-Shift Caregiver",
+    "gender": "male",
+    "age": 50,
+    "country": "Jamaica",
+    "personality": "calm",
+    "description": "A soft-spoken male caregiver in his mid-50s with warm, intimate recording quality. He carries a gentle Jamaican accent with a deep, low pitch and an unhurried, soothing pace. His tone is patient and grounding, perfect for reassuring patients during quiet, vulnerable hours.",
+    "refText": "It's alright, I'm right here with you. The night can feel long, but you're safe, and I'll check in on you regular until morning comes.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/health-factility-v03-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/health-factility_f003_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/health-factility_f003_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/health-factility_f003_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/health-factility_f003_art_wu.jpg"
+    }
+  },
+  {
+    "id": "airport-v00",
+    "voice": "voice_460f48c58b4baaff9b4ef879543ceb5b1581da335d35bcc33489d0172f6ad1f1",
+    "name": "The Parisian Terminal Hostess",
+    "gender": "female",
+    "age": 30,
+    "country": "France",
+    "personality": "calm",
+    "description": "A poised female announcer in her early 30s with a soft French accent. Pristine studio-quality recording. Her voice is silky and mid-pitched with elegant, melodic intonation. She speaks at a gentle, unhurried pace, sounding refined, gracious, and quietly reassuring.",
+    "refText": "Bonjour and welcome, ladies and gentlemen. Boarding for Flight 218 to Paris Charles de Gaulle will begin shortly at Gate 7. We kindly ask passengers traveling with small children to come forward first. Thank you for your patience and bon voyage.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/airport-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/airport_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/airport_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/airport_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/airport_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "medical-v05",
+    "voice": "voice_ec7cda54eef80a9e38498ee9589d86e17e3ca7e434e869802418ea6438b187ec",
+    "name": "The Calm Anesthesiologist",
+    "gender": "male",
+    "age": 40,
+    "country": "France",
+    "personality": "calm",
+    "description": "A soothing male anesthesiologist in his mid-40s with a soft French accent. His voice is low and velvety with a smooth, hypnotic quality that eases anxiety. He speaks slowly and gently, drawing out each phrase reassuringly. His tone is serene, attentive, and deeply comforting. Flawless studio recording with warm clarity.",
+    "refText": "You are in very safe hands. In just a moment I will ask you to count backwards from ten, and before you reach seven, you will be peacefully asleep. There is nothing for you to worry about.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/medical-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/medical_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/medical_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/medical_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/medical_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "trustworthy-v09",
+    "voice": "voice_affaab114e2eb406147427d30e1ed0051b31d2cf9e5c8e59c2a60bb0bcd4c82f",
+    "name": "The Trustworthy German Specialist",
+    "gender": "female",
+    "age": 40,
+    "country": "Germany",
+    "personality": "calm",
+    "description": "A precise female voice in her mid-40s with a subtle German accent. She speaks at a measured, deliberate pace with a clear, controlled timbre and a steady, confident tone. Her delivery is methodical, honest, and reassuring. Excellent studio-quality recording.",
+    "refText": "Allow me to explain this carefully and precisely. I value accuracy above all, and I will never tell you anything I cannot support with facts.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/trustworthy-v09-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/trustworthy_f009_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/trustworthy_f009_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/trustworthy_f009_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/trustworthy_f009_art_wu.jpg"
+    }
+  },
+  {
+    "id": "comforting-v08",
+    "voice": "voice_cd342ea2c6b103644471ce5ac850639baea32d2d10e0b307b7f5e45e7012aff6",
+    "name": "The Soft-Spoken German Therapist",
+    "gender": "female",
+    "age": 40,
+    "country": "Germany",
+    "personality": "calm",
+    "description": "A calm female voice in her mid-40s with a light German accent. Perfect, clean audio quality. Her timbre is clear and mid-pitched with a soft, reassuring smoothness, and she speaks at a steady, deliberate pace with thoughtful pauses. Her tone is composed and empathetic, like a trusted therapist guiding you toward stillness.",
+    "refText": "Let us slow down together, just for a moment. There is nowhere you must be right now. You are exactly where you need to be, and that is enough.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/comforting-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/comforting_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/comforting_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/comforting_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/comforting_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "informative-and-educational-v06",
+    "voice": "voice_22254503346c1e074d24823f2de402edc2e7ce1e3a8f61634fb0c2d83b0e34bf",
+    "name": "Sofia - The Clear Spanish Lecturer",
+    "gender": "female",
+    "age": 40,
+    "country": "Spain",
+    "personality": "calm",
+    "description": "A composed female voice in her 40s with a gentle Castilian Spanish accent and precise English. Professional studio audio with a smooth, warm mid-range timbre and a steady, deliberate pace. Her tone is intelligent and reassuring, perfect for university lectures and academic narration.",
+    "refText": "Today's lesson asks a deceptively simple question: what makes a theory scientific? To answer it, we must first understand the difference between observation and interpretation.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/informative-and-educational-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/informative-and-educational_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/informative-and-educational_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/informative-and-educational_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/informative-and-educational_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "corporate-v00",
+    "voice": "voice_eba5dbb9ee1c02b0d360cc0eca2dd6829d9cfdf6371bb6425eb619c5326a94c2",
+    "name": "The Nordic Strategist",
+    "gender": "female",
+    "age": 30,
+    "country": "Nordic countries",
+    "personality": "calm",
+    "description": "A composed female voice in her late 30s with pristine studio-quality recording. She speaks with a subtle Scandinavian accent, crisp consonants, and a measured, deliberate pace. Her timbre is cool and clear with a medium pitch, projecting calm intelligence and quiet authority that makes strategic concepts feel precise and trustworthy.",
+    "refText": "Let's begin by examining our market position relative to last quarter. The data shows steady growth in three key regions, and our priority now is to consolidate those gains before expanding further.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/corporate-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/corporate_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/corporate_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/corporate_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/corporate_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "flight-attendant-v04",
+    "voice": "voice_f20e3ac328ce157fb067b1c77321d2c6077dcfc31c2b596f4778678de99584c9",
+    "name": "The Composed Scandinavian Crew Lead",
+    "gender": "female",
+    "age": 30,
+    "country": "Nordic countries",
+    "personality": "calm",
+    "description": "A calm female flight attendant in her late 30s with a subtle Scandinavian accent and clean studio audio. Her voice is cool, clear, and evenly pitched, delivered at a steady, measured pace. She conveys quiet competence and understated warmth, projecting reassuring control in every situation.",
+    "refText": "Good morning, and welcome aboard our flight to Copenhagen. Please take a moment to fasten your seat belt and review the safety card located in the seat pocket in front of you. We wish you a pleasant and peaceful flight.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/flight-attendant-v04-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/flight-attendant_f004_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/flight-attendant_f004_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/flight-attendant_f004_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/flight-attendant_f004_art_wu.jpg"
+    }
+  },
+  {
+    "id": "language-tutor-v08",
+    "voice": "voice_f0bdf5e6ac8c4aa1b9fecc7b4dc6aee9e237606531fdf23ff4d1c22f15d221a7",
+    "name": "The Elegant Russian Guide",
+    "gender": "female",
+    "age": 40,
+    "country": "Russia",
+    "personality": "calm",
+    "description": "A poised female voice in her late 40s with a distinguished Russian accent and rich, clear studio audio. She speaks at a slow, deliberate pace with a low, velvety timbre that carries quiet authority and depth. Her tone is refined and encouraging, like a classical instructor who values precision and grace. She makes a challenging language feel dignified and rewarding.",
+    "refText": "Welcome, my dear student. The Russian language is deep and beautiful, like a long winter evening—and today we shall begin to explore it together, slowly and with great care. Listen closely, and do not be afraid of the new sounds.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/language-tutor-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/language-tutor_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/language-tutor_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/language-tutor_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/language-tutor_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "judge-v09",
+    "voice": "voice_cfb934997bdd1af79461133d41825689305e5aa16ca2b8973cee9d215eebddec",
+    "name": "The Composed Cairo Adjudicator",
+    "gender": "male",
+    "age": 50,
+    "country": "Middle East & North Africa",
+    "personality": "calm",
+    "description": "A dignified male judge in his mid-50s with a measured Egyptian Arabic accent and excellent studio audio. His voice is warm and full, a steady baritone delivered with deliberate, flowing cadence. The tone is wise and contemplative, conveying scholarly gravity and an unwavering commitment to balance and fairness.",
+    "refText": "Let us begin with calm and with order. In this place, the scales of justice must remain perfectly balanced, undisturbed by anger or by haste. I will weigh every word you speak with the greatest care.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/judge-v09-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/judge_f009_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/judge_f009_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/judge_f009_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/judge_f009_art_wu.jpg"
+    }
+  },
+  {
+    "id": "mentor-v07",
+    "voice": "voice_7a0c7cb79ed390608f4bf379efff3a00ca8199d529fd6e845b1fbd393186b6db",
+    "name": "The Young Inspiring Mentor",
+    "gender": "female",
+    "age": 20,
+    "country": "United States",
+    "personality": "upbeat",
+    "description": "A bright, relatable female mentor in her mid-20s with a clear, energetic voice and a neutral American accent. She speaks at a quick, friendly pace with genuine enthusiasm and modern, accessible language. Her tone is peer-like and warm, perfect for guiding younger learners. High-quality, crisp recording.",
+    "refText": "Okay, real talk—comparison is the fastest way to steal your own joy. Your journey is yours, on your timeline, and honestly that's what makes it powerful. Let's focus on your next small win, okay?",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/mentor-v07-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/mentor_f007_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/mentor_f007_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/mentor_f007_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/mentor_f007_art_wu.jpg"
+    }
+  },
+  {
+    "id": "informative-and-educational-v01",
+    "voice": "voice_25c65a95e83bb173d0e280c41589aa919f113362d0126eceb47de2072aa7e26d",
+    "name": "Marcus - The Energetic Science Explainer",
+    "gender": "male",
+    "age": 20,
+    "country": "United States",
+    "personality": "upbeat",
+    "description": "A bright, fast-talking male voice in his late 20s with a standard American accent. Crisp podcast-quality recording, slightly higher pitch with a buoyant, enthusiastic timbre. His delivery is punchy and curious, perfect for YouTube science channels and quick-fire explainer videos.",
+    "refText": "Okay, this is wild — did you know a single teaspoon of neutron star material would weigh about six billion tons? Let that sink in for a second. The universe is hiding numbers so huge they barely make sense.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/informative-and-educational-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/informative-and-educational_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/informative-and-educational_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/informative-and-educational_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/informative-and-educational_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "genuine-v06",
+    "voice": "voice_dae2bd672d31860f68b24215487dd8143b467bf7a4d77dd8ecbec5e27c92c548",
+    "name": "The Bright Companion",
+    "gender": "female",
+    "age": 20,
+    "country": "Canada",
+    "personality": "upbeat",
+    "description": "A young woman in her mid-20s with a cheerful Canadian accent, speaking at a lively, friendly pace. Her voice has a clear, warm timbre with a medium-high pitch and a sunny, approachable quality that feels effortlessly genuine. She sounds like your most encouraging friend. Pristine studio audio with excellent clarity.",
+    "refText": "Hey, I'm so happy you're here! I was just thinking about how nice it is to slow down and have a real chat instead of rushing through the day.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/genuine-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/genuine_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/genuine_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/genuine_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/genuine_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "engaging-v08",
+    "voice": "voice_f8e7ca59b32744815bfba8bce0200f1865c3c59fcd260ecceb682494bf16a707",
+    "name": "The Witty Irish Raconteur",
+    "gender": "male",
+    "age": 30,
+    "country": "Ireland",
+    "personality": "upbeat",
+    "description": "A charming male storyteller in his mid-30s with a lyrical Irish accent and a mischievous twinkle in his tone. His voice is medium-pitched, warm, and musical, dancing playfully between humor and heart. He speaks at a lively, conversational pace with expressive rises and falls. Clean studio audio with a cozy, fireside intimacy.",
+    "refText": "Now, I'll tell ya, this is a story that has everything: a bit of trouble, a touch of romance, and one absolutely ridiculous goat. Pull your chair in close, would ya, because you're not gonna believe a word of it, and yet every word is true.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/engaging-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/engaging_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/engaging_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/engaging_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/engaging_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "excitable-v08",
+    "voice": "voice_6e33fa71a56348fb6b254c55d8263cf17968f0c11855b4ac2dbec7957b7afe41",
+    "name": "The Spirited Irish Storyteller",
+    "gender": "male",
+    "age": 50,
+    "country": "Ireland",
+    "personality": "upbeat",
+    "description": "An older male in his late 50s with a lyrical Irish accent and a twinkling, animated charm. His voice is warm and craggy with a melodic rise and fall, and he speaks at a lively pace that quickens with delight. The recording is rich and studio-clear. He's the gregarious raconteur who makes every tale an adventure.",
+    "refText": "Ah now, gather 'round, would ya, because have I got a story for you! Sure, it's the grandest thing you'll hear all week, I'd stake me boots on it! Settle in, hold your breath, and away we go—this one's a beauty!",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/excitable-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/excitable_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/excitable_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/excitable_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/excitable_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "smiling-v00",
+    "voice": "voice_dcc2e914f7dba687ff0dd90982c933b841e85e615cdd13031c5a96ee6f02b8e8",
+    "name": "The Sunny Aussie Host",
+    "gender": "female",
+    "age": 20,
+    "country": "Australia",
+    "personality": "upbeat",
+    "description": "A cheerful woman in her late 20s with a bright Australian accent and a smile woven through every syllable. Her voice is medium-high in pitch, breezy and warm, with crisp studio-quality recording. She speaks at a lively, upbeat pace with a playful lilt that makes everything sound like good news.",
+    "refText": "G'day, lovely! What a cracker of a morning it is—I just had to share it with you. Grab your coffee, find a sunny spot, and let's make today absolutely brilliant together.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/smiling-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/smiling_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/smiling_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/smiling_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/smiling_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "imaging-v02",
+    "voice": "voice_4d515dfe62f6548ffc5bd781f871e4e915228d778c358979fb70ace486537d42",
+    "name": "The Sleek Tech Presenter",
+    "gender": "male",
+    "age": 30,
+    "country": "Australia",
+    "personality": "upbeat",
+    "description": "A male voice in his early 30s with a polished Australian accent, bright and energetic. His timbre is smooth and slightly higher-pitched, delivered at a brisk, upbeat pace with confident inflection. The tone is modern, sales-savvy, and engaging, perfect for product showcases. Flawless studio audio with a crisp, contemporary sheen.",
+    "refText": "This is where innovation meets imaging. Our AI platform processes thousands of data points per scan, delivering insights with stunning speed and accuracy. Welcome to a smarter way of seeing inside the body.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/imaging-v02-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/imaging_f002_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/imaging_f002_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/imaging_f002_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/imaging_f002_art_wu.jpg"
+    }
+  },
+  {
+    "id": "real-person-v07",
+    "voice": "voice_68cbbc75d0c935b8dcddab3fd6864ded8fb44a20f0c0c5ad114d513dc2e487e4",
+    "name": "The Bright Indian Educator",
+    "gender": "female",
+    "age": 30,
+    "country": "India",
+    "personality": "upbeat",
+    "description": "An enthusiastic woman in her early 30s with a clear Indian English accent and excellent studio quality. Her voice is warm and articulate, with a lively, encouraging cadence and bright tone. She speaks at a brisk yet clear pace, full of genuine curiosity. Her personality is patient, motivating, and wonderfully engaging, ideal for tutorials and educational content.",
+    "refText": "So today we are going to explore something really exciting, and trust me, by the end of this, you will wonder why it ever seemed difficult at all.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/real-person-v07-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/real-person_f007_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/real-person_f007_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/real-person_f007_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/real-person_f007_art_wu.jpg"
+    }
+  },
+  {
+    "id": "credible-v06",
+    "voice": "voice_8fa70e08442dc8418e29779b237d29c8d557aecb1d3d9f36e81a8c450ed8fe47",
+    "name": "The Trusted Science Educator",
+    "gender": "male",
+    "age": 30,
+    "country": "India",
+    "personality": "upbeat",
+    "description": "A friendly male voice in his early 30s with a clear Indian English accent and clean studio recording. His voice is mid-pitched and energetic, with a smooth, articulate timbre and an engaging warmth. He speaks at a lively yet measured pace, slowing for emphasis on key ideas. The tone is enthusiastic, precise, and genuinely trustworthy.",
+    "refText": "Science isn't about having all the answers—it's about asking better questions and being honest when the evidence surprises us. Today, let's separate what we actually know from what we merely assume. The truth is often more fascinating than the myth.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/credible-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/credible_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/credible_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/credible_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/credible_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "geek-v06",
+    "voice": "voice_25da22fc87c724407e2075967b2f673b82091b59b995610b4c7079a1b692e128",
+    "name": "The Bubbly Board Game Host",
+    "gender": "female",
+    "age": 20,
+    "country": "Philippines",
+    "personality": "upbeat",
+    "description": "A female voice in her mid-20s with bright, clean studio audio. She has a cheerful, melodic soprano with a lively Filipino accent and an upbeat, inviting pace. Her tone is warm and playful, the kind of friend who pulls you to the table and explains the rules with infectious joy.",
+    "refText": "Alright everyone, gather round, grab your snacks, and clear some table space, because tonight we are diving into a game of strategy, betrayal, and just a little bit of friendship-ruining chaos! Don't worry, I'll walk you through every rule, I promise it's easier than it looks.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/geek-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/geek_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/geek_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/geek_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/geek_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "versatile-v06",
+    "voice": "voice_6f97500eb887c748bad22889cdbaa268756e433678b9f21ecf085d2d1fe7cdf2",
+    "name": "The Bright Filipino Presenter",
+    "gender": "female",
+    "age": 20,
+    "country": "Philippines",
+    "personality": "upbeat",
+    "description": "An upbeat young woman in her mid-20s with a clear Filipino English accent and a bright, medium-high pitch. She speaks with cheerful energy at a quick yet articulate pace. Studio-quality recording with crisp clarity. She excels at lively presentations, friendly tutorials, and warm, encouraging delivery.",
+    "refText": "Hi there, and welcome! I am so excited to walk you through everything today, step by step, with a big smile and lots of good energy.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/versatile-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/versatile_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/versatile_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/versatile_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/versatile_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "informative-v07",
+    "voice": "voice_e884881d8aa24cb1bf06e7c65d16f836138c4ca03ccb38106c82cb621f0e3d3a",
+    "name": "The Bright Japanese Presenter",
+    "gender": "female",
+    "age": 20,
+    "country": "Japan",
+    "personality": "upbeat",
+    "description": "A cheerful female voice in her late 20s with a gentle Japanese English accent and crisp, clean recording. Her pitch is high and clear with a light, friendly timbre, delivered at a neat, precise pace. The tone is polite and enthusiastic, making information feel welcoming and orderly.",
+    "refText": "Thank you so much for joining us today. We have prepared three very interesting facts, and I am excited to share each one with you. Please relax, and let us learn something wonderful together.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/informative-v07-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/informative_f007_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/informative_f007_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/informative_f007_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/informative_f007_art_wu.jpg"
+    }
+  },
+  {
+    "id": "public-transport-v06",
+    "voice": "voice_ebd2cda91cae1c09f67f7af73b7400ca89b7b8a7e99916bd3f94922299bc460a",
+    "name": "The Bright Seoul Airport Shuttle Host",
+    "gender": "female",
+    "age": 20,
+    "country": "South Korea",
+    "personality": "upbeat",
+    "description": "A friendly young female shuttle announcer in her mid 20s with a clear Korean accent. Her voice is cheerful, polished, and energetic, with a smooth and steady pace. Pristine studio audio with a modern, courteous tone.",
+    "refText": "Welcome aboard the airport express shuttle. Our next stop is Terminal Two for international departures. Please keep your luggage secured on the rack beside you.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/public-transport-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/public-transport_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/public-transport_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/public-transport_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/public-transport_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "podcast-host-v01",
+    "voice": "voice_12928b6198659bd4c67095815c3d97d8f5c707040be2e13492910743c8c4cc56",
+    "name": "The Lagos Trendsetter",
+    "gender": "female",
+    "age": 20,
+    "country": "Nigeria",
+    "personality": "upbeat",
+    "description": "A vibrant young female podcast host in her late 20s with a rich Nigerian accent and crisp, modern audio. Her voice is bright and melodic with expressive rises and falls that radiate confidence. She speaks at a lively, rhythmic pace, peppering her delivery with warmth and wit. Bold, culturally savvy, and effortlessly cool.",
+    "refText": "Welcome back, my people! Today we are talking about the artists rewriting the rules of Afrobeats, and trust me, you have never heard a conversation quite like this one.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/podcast-host-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/podcast-host_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/podcast-host_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/podcast-host_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/podcast-host_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "bright-v01",
+    "voice": "voice_922c68daab09bb8e03634d5a20108d877632eafb96bae4c5a15ba87fd9d55d92",
+    "name": "The Cheerful Nigerian Host",
+    "gender": "male",
+    "age": 20,
+    "country": "Nigeria",
+    "personality": "upbeat",
+    "description": "An energetic male voice in his late 20s with rich, crisp recording quality and a warm Nigerian accent. His timbre is bright and resonant with a medium pitch full of bounce and joy. He speaks at an upbeat, rhythmic pace, layering each phrase with infectious warmth and celebratory enthusiasm.",
+    "refText": "Ah, my friend, welcome, welcome! Today is going to be a beautiful day, and I am so happy you are here with me. Let us bring all the good energy and make something wonderful together!",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/bright-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/bright_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/bright_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/bright_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/bright_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "politician-v02",
+    "voice": "voice_a7d8284b46eb64a01f31921770901ce03c82b9098edb3e69a4952ee74687b796",
+    "name": "The Township Grassroots Leader",
+    "gender": "female",
+    "age": 30,
+    "country": "South Africa",
+    "personality": "upbeat",
+    "description": "A vibrant female politician in her late 30s with a rich South African accent and clear, broadcast-quality audio. She speaks with a rhythmic, energetic cadence that swells with emotion. Her voice is warm and earthy, full of resilience and communal pride.",
+    "refText": "My brothers and my sisters, I grew up in these very streets, fetching water before the sun rose. I have not forgotten where I come from, and I will never forget who sent me to fight for them. Your struggles are my struggles, and your hope is my fuel.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/politician-v02-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/politician_f002_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/politician_f002_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/politician_f002_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/politician_f002_art_wu.jpg"
+    }
+  },
+  {
+    "id": "homemaker-v00",
+    "voice": "voice_c988b19ecc2565a23317138dce686ba4ca5c363b9936b5827c55584d8f8941a7",
+    "name": "The Cheerful Caribbean Cook",
+    "gender": "female",
+    "age": 30,
+    "country": "Jamaica",
+    "personality": "upbeat",
+    "description": "A vibrant female voice in her mid-30s with a lilting Jamaican accent. Her tone is bright and joyful, with a medium-high pitch that bubbles with warmth and rhythm. She speaks at a lively, musical pace, peppering her speech with affectionate encouragement. The voice radiates hospitality and a love of feeding people well. Clean studio recording with rich, full clarity.",
+    "refText": "Come in, come in, mi dear, the pot is already singin' on the stove! Today we makin' a big bowl of rice and peas with plenty coconut, the way my grandmother teach me. Just breathe in that spice, and tell me your worries melt away already.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/homemaker-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/homemaker_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/homemaker_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/homemaker_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/homemaker_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "instructor-v01",
+    "voice": "voice_640e1a3a4175b3fef2c3fcefe907ba33af085ec46b4e12ab9e5540b18bd30538",
+    "name": "The Spirited Language Tutor",
+    "gender": "female",
+    "age": 20,
+    "country": "France",
+    "personality": "upbeat",
+    "description": "A lively, expressive female voice in her late 20s with bright studio-quality audio. Mid-to-high pitched with a melodic French accent, speaking at an animated, encouraging pace. The tone is playful and warm, like a language teacher who turns every mistake into a moment of laughter. Crisp articulation with musical inflection and genuine enthusiasm.",
+    "refText": "Bonjour, mes amis! Today we will practice ordering coffee in a Parisian café, and yes, you are allowed to make mistakes, that is how we learn! Repeat after me slowly, and do not be afraid to exaggerate the sounds. Pronunciation is like dancing, you simply have to feel the rhythm.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/instructor-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/instructor_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/instructor_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/instructor_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/instructor_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "midlife-v05",
+    "voice": "voice_23ceddd80b253a4cd29293f5138e4214244a3718f78bbab6e0a4a9f254a72fe4",
+    "name": "The Charismatic Italian Restaurateur",
+    "gender": "male",
+    "age": 50,
+    "country": "Italy",
+    "personality": "upbeat",
+    "description": "A man in his mid-50s with a robust, expressive voice and a warm Italian accent. He speaks at a lively, generous pace with rolling cadence and a full, hearty timbre. His tone is passionate, joyful, and embracing of life's pleasures. High-quality studio recording with vibrant presence.",
+    "refText": "You think life is over at fifty? No, no, no! This is when the sauce finally comes together. All those years simmering—now you can taste everything.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/midlife-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/midlife_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/midlife_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/midlife_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/midlife_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "instructor-v08",
+    "voice": "voice_23f0b39e3306128229cba5c12aa0ff119011c6bcb39f8f89e3cb2d0c739b0169",
+    "name": "The Seasoned Culinary Instructor",
+    "gender": "male",
+    "age": 50,
+    "country": "Italy",
+    "personality": "upbeat",
+    "description": "A robust, jovial male voice in his late 50s with excellent audio quality. Medium-low pitched with a rich Italian accent, speaking at a relaxed, expressive pace. The tone is passionate and warm, like a chef who teaches with both heart and humor. Hearty timbre with lively inflection and an irresistible love of food.",
+    "refText": "Ah, my friends, the secret to a perfect sauce is patience, you cannot rush good flavor! Add a little olive oil, let the garlic whisper, not scream, in the pan. Taste as you go, always taste, because cooking is a conversation between you and the ingredients.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/instructor-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/instructor_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/instructor_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/instructor_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/instructor_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "entertainment-and-tv-v07",
+    "voice": "voice_c9145eba6ae5f2be1ef87074ef1188ee5bebff06bf97e96d1e963f195e90c86a",
+    "name": "Lola - Sassy Latina Talk Show Host",
+    "gender": "female",
+    "age": 30,
+    "country": "Latin America",
+    "personality": "upbeat",
+    "description": "Lola is a female voice in her mid-30s with a vibrant Latin American accent. Bright, studio-clean recording with a warm, expressive timbre and a fast, animated pace. Her personality is bold, sassy, and full of heart, perfect for daytime talk shows and celebrity interviews.",
+    "refText": "Welcome back, mi gente! We have got the juiciest exclusives lined up for you today, and trust me, you do not want to miss a single second of this drama!",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/entertainment-and-tv-v07-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/entertainment-and-tv_f007_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/entertainment-and-tv_f007_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/entertainment-and-tv_f007_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/entertainment-and-tv_f007_art_wu.jpg"
+    }
+  },
+  {
+    "id": "banker-v06",
+    "voice": "voice_24d1e03114b197a6057f455335b1b4c72b593e0a5fa99872e88d5a7b2ccf2eae",
+    "name": "The Vibrant Brazilian Personal Banker",
+    "gender": "female",
+    "age": 30,
+    "country": "Brazil",
+    "personality": "upbeat",
+    "description": "A spirited female banker in her early 30s with a melodic Brazilian Portuguese accent, speaking at a warm, animated pace. Her voice is rich and expressive with a bright mid-range pitch, conveying passion and genuine connection. Clear studio audio with a sunny, encouraging tone that makes finance feel human.",
+    "refText": "Welcome to Banco Horizonte! Here we believe money should bring you joy, not stress, so let us help you turn your dreams into a real, achievable plan.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/banker-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/banker_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/banker_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/banker_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/banker_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "language-tutor-v01",
+    "voice": "voice_42322e26eb25a7634915cb924d5979a726419a3eca82294492756a9caafbaa96",
+    "name": "The Spirited Brazilian Coach",
+    "gender": "male",
+    "age": 20,
+    "country": "Brazil",
+    "personality": "upbeat",
+    "description": "An energetic male voice in his late 20s with a warm Brazilian Portuguese accent and crisp, clear recording quality. He speaks at a lively, upbeat pace with a bright, resonant tone full of rhythm and warmth. His personality is playful and motivating, like a friend pulling you onto the dance floor of a new language. He turns every lesson into something joyful and contagious.",
+    "refText": "Olá, my friend, are you ready to have some fun today? Forget about being perfect—language is like music, and we are just learning the beat together! Repeat after me, loud and proud, and don't be shy about your accent.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/language-tutor-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/language-tutor_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/language-tutor_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/language-tutor_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/language-tutor_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "delightful-v07",
+    "voice": "voice_9b050b866b647aaf71de508d038c963d31884d4805771122888bf3fec7a246bd",
+    "name": "The Upbeat Brazilian Host",
+    "gender": "male",
+    "age": 20,
+    "country": "Brazil",
+    "personality": "upbeat",
+    "description": "An energetic young adult male voice in his late 20s with a sunny Brazilian Portuguese accent and bright studio sound. His timbre is mid-pitched, warm, and bouncy, with infectious rhythm in his delivery. He speaks at a lively, celebratory pace, like a festival emcee who turns everything into a party.",
+    "refText": "Eh, welcome, welcome, my friend! Today the sun is shining and the energy is amazing, so let's celebrate, yes? Come on, smile big with me!",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/delightful-v07-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/delightful_f007_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/delightful_f007_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/delightful_f007_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/delightful_f007_art_wu.jpg"
+    }
+  },
+  {
+    "id": "tech-bro-v05",
+    "voice": "voice_0561ed052fe842cb00d7118158fc9ba7f3146d68ec2a69dc445407035551e3d8",
+    "name": "The Female AI Researcher",
+    "gender": "female",
+    "age": 20,
+    "country": "United States",
+    "personality": "sharp",
+    "description": "A woman in her late 20s with a clear, thoughtful standard American accent and a medium pitch. She speaks at a measured, precise pace with intellectual curiosity and subtle excitement when explaining concepts. Her tone is approachable yet authoritative, recorded in pristine studio quality.",
+    "refText": "So what's genuinely fascinating about these large language models is how emergent capabilities just appear at scale. We didn't explicitly train for reasoning, yet here it is, and that raises some really profound questions about alignment.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/tech-bro-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/tech-bro_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/tech-bro_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/tech-bro_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/tech-bro_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "interviewer-v00",
+    "voice": "voice_ab11193a433ed308a45986cf3e4e924c47c58eb4f8525823cc6ddefa399c6669",
+    "name": "The Probing Investigator",
+    "gender": "male",
+    "age": 40,
+    "country": "United States",
+    "personality": "sharp",
+    "description": "A sharp, no-nonsense male interviewer in his late 40s with a crisp neutral American accent and pristine studio recording. His voice has a firm mid-low pitch and a clipped, deliberate pace that signals he's after the truth. The tone is incisive and skeptical, leaning in on every answer with quiet intensity.",
+    "refText": "Let's go back to the timeline you just gave me, because something there doesn't quite add up. You said the decision was made in March, yet the documents are dated in January. Walk me through exactly what happened in between.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/interviewer-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/interviewer_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/interviewer_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/interviewer_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/interviewer_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "host-interviewer-v00",
+    "voice": "voice_c4d0fc5f588c377ee5e20dc962018d2362856f54beec248a690129ad49287841",
+    "name": "The Sharp Investigative Anchor",
+    "gender": "male",
+    "age": 40,
+    "country": "Canada",
+    "personality": "sharp",
+    "description": "A no-nonsense male interviewer in his late 40s with a crisp, authoritative voice and neutral Canadian accent. He speaks at a brisk, precise pace, pressing for details with controlled intensity. His timbre is mid-range and clear, carrying a hint of skepticism that keeps guests honest. Broadcast-grade studio recording with pristine clarity.",
+    "refText": "Welcome back to The Record. Tonight my guest claims the numbers tell a different story, so let's hold those figures up to the light. I want specifics, dates, and sources, because our listeners deserve more than talking points.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/host-interviewer-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/host-interviewer_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/host-interviewer_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/host-interviewer_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/host-interviewer_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "fashionista-v04",
+    "voice": "voice_0816c079311ec5155714915b518c6c55e18b42f255244e6d3c153d3710de60a0",
+    "name": "The London Editorial Voice",
+    "gender": "female",
+    "age": 40,
+    "country": "United Kingdom (England)",
+    "personality": "sharp",
+    "description": "Immaculate studio quality. A refined female voice in her late 40s with a crisp Received Pronunciation British accent. Her timbre is smooth and authoritative, her pace controlled and precise. There is a discerning, almost severe elegance to her delivery, the voice of a seasoned magazine editor.",
+    "refText": "This season demands restraint. We are seeing a return to tailored minimalism—clean lines, muted palettes, and an utter rejection of anything garish. It is, quite simply, a relief.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/fashionista-v04-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/fashionista_f004_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/fashionista_f004_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/fashionista_f004_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/fashionista_f004_art_wu.jpg"
+    }
+  },
+  {
+    "id": "assertive-v00",
+    "voice": "voice_7832d24010563cae44961991545373fc5cee6b448d37e09ee85d8e4777011425",
+    "name": "The Boardroom Closer",
+    "gender": "male",
+    "age": 40,
+    "country": "United Kingdom (England)",
+    "personality": "sharp",
+    "description": "A confident male sales director in his mid-40s with a polished British Received Pronunciation accent and pristine studio audio. His voice is smooth, resonant, and carries a medium-low pitch with crisp consonants. He speaks at a controlled, deliberate pace, landing each point like a punch. The tone is persuasive and unshakeable, the sound of a man who has never lost a negotiation.",
+    "refText": "Let's stop dancing around the figures, shall we? You have the budget, I have the solution, and we both know this deal closes today. Sign here, and you'll wonder why you ever hesitated.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/assertive-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/assertive_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/assertive_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/assertive_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/assertive_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "corporate-training-v01",
+    "voice": "voice_1ed6814c77ab2edb06ae4d07f7494c5e7e3917aea1cb77ec8be2f789181ebaa6",
+    "name": "The Authoritative Compliance Expert",
+    "gender": "male",
+    "age": 40,
+    "country": "United Kingdom (England)",
+    "personality": "sharp",
+    "description": "A crisp male voice in his mid-40s with broadcast-quality recording. He has a refined Received Pronunciation British accent, a firm baritone, and a precise, deliberate pace. His tone is serious and unwavering, ideal for regulatory, safety, and compliance training where accuracy matters.",
+    "refText": "Compliance is not optional; it is the foundation of trust within our organisation. In this module, we will examine the key regulations that govern your daily responsibilities. Pay close attention, as each policy exists to protect both you and the company.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/corporate-training-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/corporate-training_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/corporate-training_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/corporate-training_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/corporate-training_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "history-professor-v01",
+    "voice": "voice_0dba248a24cac0c5c8ede3775c860017e01dd670b2d36fe6dd0713de56b96424",
+    "name": "The Edinburgh Chronicler",
+    "gender": "female",
+    "age": 50,
+    "country": "United Kingdom (Scotland)",
+    "personality": "sharp",
+    "description": "A female history professor in her mid-50s with a refined Scottish accent and excellent audio fidelity. Her voice is medium-pitched with a crisp, slightly burred timbre and a dry, witty undertone. She speaks at a brisk, confident pace, balancing rigorous scholarship with sly humor and an evident delight in untangling the messiness of the past.",
+    "refText": "Right then, settle in. The Jacobite risings were not the romantic tartan tales the postcards would have you believe. They were political gambles, desperate and bloody, and understanding them means setting aside the bagpipes for a moment.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/history-professor-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/history-professor_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/history-professor_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/history-professor_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/history-professor_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "intelligent-v08",
+    "voice": "voice_0fad189b40330aa9cc44798e6f94e261bc7af42cc52a6da468efeedbbaed2d0a",
+    "name": "The Edinburgh Lecturer",
+    "gender": "female",
+    "age": 50,
+    "country": "United Kingdom (Scotland)",
+    "personality": "sharp",
+    "description": "A spirited female voice in her late 50s with a refined Scottish accent and crisp, musical enunciation. Her pitch is warm and slightly low, her pace measured with a teacher's natural rhythm, savoring well-chosen words. Her tone is scholarly, witty, and genuinely curious. Pristine audio with clear, resonant warmth.",
+    "refText": "Let us begin with a deceptively simple word: learning. We say a child learns, a student learns, and now a machine learns. But the mechanisms could hardly be more different, and exploring that gap reveals the most fascinating questions in all of science.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/intelligent-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/intelligent_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/intelligent_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/intelligent_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/intelligent_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "intellectual-v05",
+    "voice": "voice_7c4f2dac72046821b58b3e0e869950d456c689f8001aa6b280e832d6dbde1134",
+    "name": "The Sharp-Witted Australian Academic",
+    "gender": "female",
+    "age": 40,
+    "country": "Australia",
+    "personality": "sharp",
+    "description": "A confident female scholar in her mid-40s with a clear Australian accent and excellent studio recording. Her voice is bright and grounded, with a medium pitch and a brisk, articulate cadence. She speaks with energetic precision, occasionally leavening rigor with dry humor. Her tone is approachable yet incisive, the sort that keeps a lecture hall wide awake.",
+    "refText": "Right, let's not romanticize the algorithm. It doesn't understand a thing; it predicts patterns. The miracle is how convincingly it fakes comprehension, and that should make us both impressed and rather cautious.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/intellectual-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/intellectual_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/intellectual_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/intellectual_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/intellectual_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "elearning-voice-over-v01",
+    "voice": "voice_8e6db1c8a61d50c3b5a11683b4c3c70dc2dfc71c28f979c2cd2dc0c965a8b4f9",
+    "name": "The Authoritative Australian Trainer",
+    "gender": "male",
+    "age": 30,
+    "country": "Australia",
+    "personality": "sharp",
+    "description": "A confident male voice in his late 30s with a clear Australian accent and crisp, broadcast-quality recording. His tone is medium-deep, grounded, and matter-of-fact, with a brisk but controlled pace. He sounds like an experienced corporate trainer who values clarity and gets straight to the point.",
+    "refText": "Right, let's get into it. Today's session covers workplace safety protocols, and by the end you'll know exactly how to identify and report a hazard. These skills aren't just procedure, they protect you and your mates on the job.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/elearning-voice-over-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/elearning-voice-over_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/elearning-voice-over_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/elearning-voice-over_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/elearning-voice-over_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "articulate-v05",
+    "voice": "voice_a63f305e4fdde55f318935f410eaeca4ddb5ab1edf0d06432f2a7e6d8a27fcdc",
+    "name": "The Mumbai Scholar",
+    "gender": "female",
+    "age": 30,
+    "country": "India",
+    "personality": "sharp",
+    "description": "An articulate female voice in her late 30s with an Indian English accent and excellent recording clarity. Her tone is bright and precise with a medium-high pitch and a brisk, confident cadence. She speaks with crisp consonants and lively intonation, like an accomplished academic and broadcaster who makes intricate topics feel engaging.",
+    "refText": "Welcome, everyone, and thank you so much for being here. Today we shall examine how clarity of thought leads naturally to clarity of speech. Once your ideas are well organised, the words simply follow.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/articulate-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/articulate_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/articulate_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/articulate_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/articulate_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "banker-v01",
+    "voice": "voice_383f1f4d887cdfc025de5c392ec725a193a1325c26ac90b33ec19d0fda84660e",
+    "name": "The Polished Singaporean Relationship Banker",
+    "gender": "female",
+    "age": 30,
+    "country": "Singapore",
+    "personality": "sharp",
+    "description": "A poised female banker in her mid-30s with a clear Singaporean accent, speaking at a brisk yet articulate pace. Her voice is bright and precise with a confident mid-range pitch, conveying efficiency and modern professionalism. Pristine studio recording with crisp consonants and an upbeat, service-oriented warmth.",
+    "refText": "Good afternoon and welcome to Meridian Bank. Our priority banking suite is designed to give you seamless access to wealth solutions, multi-currency accounts, and dedicated advisory, all in one place.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/banker-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/banker_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/banker_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/banker_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/banker_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "business-man-v07",
+    "voice": "voice_172785c94dbb991f8efc009edd08149f60d2283da81f282f6316f9182642a8bc",
+    "name": "The Singapore Fintech Lead",
+    "gender": "male",
+    "age": 30,
+    "country": "Singapore",
+    "personality": "sharp",
+    "description": "A sharp male finance executive in his mid-30s with a clear Singaporean accent and crisp, modern audio quality. His voice is medium-pitched, brisk, and articulate, with an efficient, confident cadence. His tone is forward-thinking and precise, suited to fast-moving financial briefings.",
+    "refText": "Good morning. The financial landscape is shifting faster than ever, and the firms that win will be those that embrace digital transformation today, not tomorrow. Let me walk you through exactly where the opportunities lie.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/business-man-v07-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/business-man_f007_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/business-man_f007_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/business-man_f007_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/business-man_f007_art_wu.jpg"
+    }
+  },
+  {
+    "id": "boss-v04",
+    "voice": "voice_b7ef8fedb94daaad8def541ac09305bbccc7af72ce902e43f1f01e4162be0cc4",
+    "name": "The Cold Strategist",
+    "gender": "male",
+    "age": 40,
+    "country": "Singapore",
+    "personality": "sharp",
+    "description": "A composed male executive in his early 40s with a precise Singaporean accent and a clipped, controlled tenor. He speaks with calculated efficiency, every sentence economical and emotionless, like a chess player several moves ahead. Studio-grade audio with a clean, slightly metallic clarity.",
+    "refText": "The data does not lie, and neither do I. We expand into three markets this quarter, we cut what underperforms, and we do not sentimentalize losses. Questions should be about execution, not direction.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/boss-v04-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/boss_f004_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/boss_f004_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/boss_f004_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/boss_f004_art_wu.jpg"
+    }
+  },
+  {
+    "id": "spacey-v06",
+    "voice": "voice_085605520a6612e9700f7e0dc7e340d6ddefc91c57d9fd7c22b958eac78182e3",
+    "name": "The Quantum Lab Researcher",
+    "gender": "female",
+    "age": 40,
+    "country": "Japan",
+    "personality": "sharp",
+    "description": "A precise, curious female voice in her early 40s with crisp, clean audio quality. She speaks with a measured Japanese English accent, her timbre clear and bright with a thoughtful, analytical edge. Her pace is brisk yet careful, pausing to choose exact words. Her tone blends scientific rigor with quiet, contained excitement, like a physicist on the verge of a discovery that could unravel the cosmos.",
+    "refText": "Observe the readings carefully. The particle exists in two states at once until we measure it—and the moment we look, the universe seems to decide. Fascinating, isn't it? Reality itself responds to our attention.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/spacey-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/spacey_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/spacey_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/spacey_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/spacey_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "intelligent-v05",
+    "voice": "voice_2f9ea8bd6f29ab154676c7c74c0ac333840d0ef2f24169ca086954c3ddd0278c",
+    "name": "The Tokyo Engineer",
+    "gender": "male",
+    "age": 30,
+    "country": "Japan",
+    "personality": "sharp",
+    "description": "A precise male voice in his early 30s with a soft Japanese accent and meticulous, even delivery. His pitch is light and clear, his pace measured and efficient, with carefully controlled emphasis. His tone is humble, methodical, and quietly passionate about elegant solutions. Flawless studio audio with clean articulation.",
+    "refText": "In good engineering, simplicity is the highest goal. A complex model that no one understands is fragile. But a system built with care, where every component has a purpose, becomes reliable and beautiful. This principle guides how we design intelligence itself.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/intelligent-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/intelligent_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/intelligent_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/intelligent_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/intelligent_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "barber-v09",
+    "voice": "voice_1286eecc71c769ab923bf349baa06b25f8001210d4854b718ac230b07c6f97a2",
+    "name": "The Modern Korean Grooming Artist",
+    "gender": "male",
+    "age": 20,
+    "country": "South Korea",
+    "personality": "sharp",
+    "description": "A stylish young male barber in his late 20s with a Korean accent and a crisp, friendly voice. He speaks at a brisk, upbeat pace with confident, trend-savvy enthusiasm. Pristine studio audio captures the sleek, contemporary energy of his fashion-forward salon.",
+    "refText": "Hello, welcome! Please, sit here, very comfortable. Today we go for the modern style, yes? Textured on top, clean fade on the side—super popular right now. You will look very fresh, trust me.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/barber-v09-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/barber_f009_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/barber_f009_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/barber_f009_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/barber_f009_art_wu.jpg"
+    }
+  },
+  {
+    "id": "informative-v03",
+    "voice": "voice_0d14a14952f9631fc7f1053b761aef994fa4f5b055639b42f749acf6a1d0a21d",
+    "name": "The Authoritative African Anchor",
+    "gender": "male",
+    "age": 30,
+    "country": "Nigeria",
+    "personality": "sharp",
+    "description": "A commanding male voice in his late 30s with a polished Nigerian accent and broadcast-grade audio. His timbre is deep and resonant with crisp diction, delivered at a confident, steady pace. The tone is dignified and trustworthy, suited to serious, fact-driven presentations.",
+    "refText": "Welcome. Today we examine a topic that affects millions of lives across the globe, and the facts demand our full attention. I will present each point clearly, so that by the end you will understand both the challenge and the opportunity before us.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/informative-v03-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/informative_f003_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/informative_f003_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/informative_f003_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/informative_f003_art_wu.jpg"
+    }
+  },
+  {
+    "id": "engaging-v02",
+    "voice": "voice_54dc0264e886697ad9db1388e82d3d6ce33b73d43d899958d9fb42eef9239290",
+    "name": "The Polished Nigerian Broadcaster",
+    "gender": "male",
+    "age": 40,
+    "country": "Nigeria",
+    "personality": "sharp",
+    "description": "A commanding male news-and-features presenter in his early 40s with a crisp, polished Nigerian English accent. His voice is deep, resonant, and authoritative, yet carries a welcoming warmth that invites trust. He speaks with deliberate, rhythmic pacing and confident emphasis on each headline idea. Broadcast-grade audio with full-bodied clarity.",
+    "refText": "Good evening, and welcome. Tonight, we bring you stories that matter, voices that inspire, and ideas that just might change the way you see tomorrow. Settle in, because the conversation starts right now.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/engaging-v02-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/engaging_f002_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/engaging_f002_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/engaging_f002_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/engaging_f002_art_wu.jpg"
+    }
+  },
+  {
+    "id": "intelligent-v00",
+    "voice": "voice_799518500d51e766297b18143f7d8147800dd9de2c4022e0310fb8867836132c",
+    "name": "The Nairobi Futurist",
+    "gender": "male",
+    "age": 30,
+    "country": "Kenya",
+    "personality": "sharp",
+    "description": "A confident male voice in his late 30s with a warm Kenyan accent and crisp British-influenced diction. His mid-range baritone is smooth and resonant, delivered at a measured, engaging pace that builds momentum as ideas develop. His tone is optimistic and visionary, blending intellectual rigor with infectious enthusiasm. Pristine studio recording with clear articulation.",
+    "refText": "Across this continent, young engineers are leapfrogging old systems entirely, building intelligence into mobile networks that serve millions. Imagine a clinic in a remote village where an algorithm helps a nurse diagnose in seconds. This is not the distant future—it is happening right now, and we are only beginning.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/intelligent-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/intelligent_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/intelligent_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/intelligent_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/intelligent_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "interviewer-v08",
+    "voice": "voice_040cb92693b4a3c32b64e76417d71d87c8e4ecd80ff0522c7388ece7e20afcfe",
+    "name": "The Hardline Anchor",
+    "gender": "male",
+    "age": 40,
+    "country": "South Africa",
+    "personality": "sharp",
+    "description": "A commanding male interviewer in his 40s with a polished South African accent and a deep, authoritative timbre. Broadcast-quality audio with crisp articulation. His pace is steady and weighty, delivering questions with the gravity of prime-time news and an unflinching demand for accountability.",
+    "refText": "Good evening. Tonight we put the difficult questions directly to our guest, and we will not settle for evasion. Let us begin with the report released this morning — what is your response to its findings?",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/interviewer-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/interviewer_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/interviewer_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/interviewer_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/interviewer_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "entertainment-and-tv-v05",
+    "voice": "voice_08861ee47f6615af22e32545a53790d5ce5c79c28fba3abd826ab2a4b01d1768",
+    "name": "Camille - Chic French Lifestyle Host",
+    "gender": "female",
+    "age": 20,
+    "country": "France",
+    "personality": "sharp",
+    "description": "Camille is a female voice in her late 20s with an elegant French accent. Crisp, intimate studio quality with a silky, mid-pitched timbre and a smooth, unhurried pace. Her tone is sophisticated, playful, and effortlessly stylish, suited for lifestyle, fashion, and celebrity profiles.",
+    "refText": "Bonjour, mes amis, and welcome to a little slice of glamour. Today we explore the most exquisite looks from the season's most talked-about premieres. Shall we begin, darling?",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/entertainment-and-tv-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/entertainment-and-tv_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/entertainment-and-tv_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/entertainment-and-tv_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/entertainment-and-tv_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "mathematics-v07",
+    "voice": "voice_9e52a8d5ddcb0e908771384afe44e7e69817bdbc1c61817d88e01d21fee9b54c",
+    "name": "The Crisp German Scientist",
+    "gender": "male",
+    "age": 40,
+    "country": "Germany",
+    "personality": "sharp",
+    "description": "A male applied mathematician in his mid-40s with a precise German accent and immaculate studio audio. His voice is clear, structured, and authoritative, with a steady, methodical pace and exacting enunciation. The tone is logical and confident, valuing accuracy and clean reasoning above all.",
+    "refText": "Let us be precise. A function maps each input to exactly one output. This definition is the foundation, and once you accept it clearly, calculus becomes far less mysterious.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/mathematics-v07-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/mathematics_f007_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/mathematics_f007_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/mathematics_f007_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/mathematics_f007_art_wu.jpg"
+    }
+  },
+  {
+    "id": "knowledgeable-v02",
+    "voice": "voice_201b7c2a435def4d4434ad56823bcae66310dcf0a7a7121b068fdd392fba68cf",
+    "name": "The Precise German Analyst",
+    "gender": "male",
+    "age": 50,
+    "country": "Germany",
+    "personality": "sharp",
+    "description": "A measured male voice in his early 50s with a crisp German accent and a clear, slightly cool baritone. His speech is exacting and well-structured, favoring logic and clarity over flourish. He speaks at a steady, controlled pace with confident emphasis on key terms. Broadcast-grade audio with a clean, analytical sharpness.",
+    "refText": "Let us be precise. Economic systems behave according to incentives, and incentives can be measured. Once we accept this, the chaos of the market begins to reveal its underlying order.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/knowledgeable-v02-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/knowledgeable_f002_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/knowledgeable_f002_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/knowledgeable_f002_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/knowledgeable_f002_art_wu.jpg"
+    }
+  },
+  {
+    "id": "politician-v06",
+    "voice": "voice_48508f6631666051ee6236325ee2aa0ee3d7ac86a4edf83b0babd1eb15e671bd",
+    "name": "The Steely Eastern European Reformer",
+    "gender": "female",
+    "age": 40,
+    "country": "Eastern Europe",
+    "personality": "sharp",
+    "description": "A determined female politician in her mid 40s with a crisp Eastern European accent and high-quality audio. She speaks at a brisk, no-nonsense pace with precise consonants and a firm, slightly low pitch. Her tone is resolute, fearless, and burning with reformist zeal.",
+    "refText": "For too many years, corruption has eaten our institutions from the inside like rust. I did not enter politics to make friends with the rust. I came to scrape it away, plank by plank, until our democracy stands clean and strong again.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/politician-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/politician_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/politician_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/politician_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/politician_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "business-woman-v06",
+    "voice": "voice_18ae18aea693fd2c5ae752a04389b740591bcc1a683aa5e9a817f2c984a6919b",
+    "name": "The Rising Operations Manager",
+    "gender": "female",
+    "age": 20,
+    "country": "United States",
+    "personality": "warm",
+    "description": "A grounded woman in her late 20s with a neutral Midwestern American accent. Her voice is medium-pitched, clear, and approachable with a friendly, practical warmth. She speaks at a steady, efficient pace with confident articulation. Clean, professional audio quality.",
+    "refText": "Efficiency starts with the small things—the handoffs, the timelines, the moments nobody notices. Fix those, and the whole operation runs smoother.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/business-woman-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/business-woman_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/business-woman_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/business-woman_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/business-woman_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "weather-alert-v09",
+    "voice": "voice_974b49159a8cc522a5a13f24222aeb26045995870ef5cac2304b89069c0344b8",
+    "name": "The Desert Heat Advisory Voice",
+    "gender": "male",
+    "age": 30,
+    "country": "United States",
+    "personality": "warm",
+    "description": "Male announcer in his 30s with a warm Southwestern American accent and clean studio audio. Mid-pitched, friendly tone with a slightly dry, easygoing texture. Speaks at a relaxed but clear pace. Approachable and practical, delivering serious heat warnings with neighborly concern.",
+    "refText": "Afternoon, folks. An excessive heat warning is in effect across the valley, with temperatures climbing past one hundred and fifteen degrees today. Stay indoors during peak hours, drink plenty of water, and never leave children or pets in parked vehicles.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/weather-alert-v09-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/weather-alert_f009_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/weather-alert_f009_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/weather-alert_f009_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/weather-alert_f009_art_wu.jpg"
+    }
+  },
+  {
+    "id": "southern-gentleman-v05",
+    "voice": "voice_28bbdd3ab0f5662caa277ccafb07195d9c21d9fa73f26ca535977fe6abf13cf8",
+    "name": "The Virginia Tidewater Scholar",
+    "gender": "male",
+    "age": 50,
+    "country": "United States",
+    "personality": "warm",
+    "description": "A cultured gentleman in his early 50s with a refined Tidewater Virginia accent, soft and historically rich. His voice is a clear, articulate baritone with a measured, professorial pace and a graceful warmth. Immaculate studio quality. He's the embodiment of old-world Southern erudition—gentlemanly, learned, and quietly proud of his heritage.",
+    "refText": "Good day to you. Here along the Tidewater, history isn't something we read about—it's something we live among, in every brick and every old oak. Allow me to walk you through the colonial gardens and tell their tales.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/southern-gentleman-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/southern-gentleman_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/southern-gentleman_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/southern-gentleman_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/southern-gentleman_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "nerd-v06",
+    "voice": "voice_07cf6bb5a53bc52eac846d6b306898b96e3b60f32682cc82439b024ee9a2be9e",
+    "name": "The Coding Bootcamp Mentor",
+    "gender": "female",
+    "age": 30,
+    "country": "Canada",
+    "personality": "warm",
+    "description": "A woman in her early 30s with a clear, encouraging voice and a warm, upbeat cadence. She has a neutral Canadian accent with crisp, clean audio and a friendly mid-range pitch. Her personality is patient and motivating, the kind of teacher who makes intimidating concepts feel approachable.",
+    "refText": "Don't panic when you see that error message—seriously, it's your best friend. It's literally telling you exactly which line broke and why. Read it slowly, breathe, and remember: every developer on Earth has stared at a missing semicolon for an hour.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/nerd-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/nerd_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/nerd_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/nerd_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/nerd_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "credible-v01",
+    "voice": "voice_434a303e259cc42c3b9d690f6b04a73277cf393161b811cd9cdcc3a60d42ea80",
+    "name": "The Reassuring Healthcare Advisor",
+    "gender": "female",
+    "age": 40,
+    "country": "Canada",
+    "personality": "warm",
+    "description": "A warm female voice in her early 40s with a gentle Canadian accent and clean, high-fidelity audio. Her timbre is soft yet clear, mid-pitched with a soothing, nurturing quality. She speaks at a calm, steady pace designed to put listeners at ease. The tone is compassionate, knowledgeable, and trustworthy.",
+    "refText": "Your health is a journey, not a single decision, and you don't have to navigate it alone. Let's go through your options carefully, weighing the benefits and the risks together. The most important thing is that you feel informed and supported every step of the way.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/credible-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/credible_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/credible_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/credible_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/credible_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "attentive-v02",
+    "voice": "voice_9905e48d65fb37e69963ea210aa3e6a18b6307cdaf1810e81123e47477acd39f",
+    "name": "The Attentive Concierge",
+    "gender": "female",
+    "age": 30,
+    "country": "United Kingdom (England)",
+    "personality": "warm",
+    "description": "A polished woman in her early 30s with a refined British accent and crisp, high-fidelity recording. Her voice is medium-high, clear, and gracious, with a velvety smoothness that conveys total focus on the guest. She speaks at an even, accommodating pace. Her tone is warm, professional, and discreetly devoted to anticipating every need.",
+    "refText": "Good evening, and welcome. It is my genuine pleasure to look after you tonight, so please do let me know exactly how I can make your stay perfect. Nothing is too small a request, and I shall give it my full attention.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/attentive-v02-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/attentive_f002_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/attentive_f002_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/attentive_f002_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/attentive_f002_art_wu.jpg"
+    }
+  },
+  {
+    "id": "corporate-v02",
+    "voice": "voice_ec097cbeb00c3a5cb254850a8b3d028650940d54e3e8500633e893ef0a394842",
+    "name": "The London Boardroom Veteran",
+    "gender": "male",
+    "age": 60,
+    "country": "United Kingdom (England)",
+    "personality": "warm",
+    "description": "A distinguished male voice in his early 60s with rich studio recording. He speaks with a refined Received Pronunciation British accent, a deep resonant timbre, and a slow, deliberate cadence. His tone is dignified and assured, carrying decades of executive gravitas softened by occasional warmth.",
+    "refText": "Good afternoon, everyone. I've spent forty years in this industry, and I can tell you that reputation is built slowly and lost quickly. Let us protect ours with every decision we make.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/corporate-v02-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/corporate_f002_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/corporate_f002_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/corporate_f002_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/corporate_f002_art_wu.jpg"
+    }
+  },
+  {
+    "id": "approachable-v06",
+    "voice": "voice_6947127e70d04e1434f403a2953090e616990362f308c4efd0d97d454e93be3b",
+    "name": "The Soft-Spoken Scottish Mentor",
+    "gender": "male",
+    "age": 50,
+    "country": "United Kingdom (Scotland)",
+    "personality": "warm",
+    "description": "A gentle, reassuring male voice in his early 50s with warm studio-quality recording. He has a soft Scottish accent and speaks at a steady, thoughtful pace. His timbre is mid-low and velvety, with a comforting, fatherly quality. The tone is patient, kind, and quietly encouraging, like a trusted teacher who believes in you.",
+    "refText": "Well now, it's grand to have you with me. There's no need to hurry—we'll take it one wee step at a time, and I'll be right here beside you.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/approachable-v06-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/approachable_f006_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/approachable_f006_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/approachable_f006_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/approachable_f006_art_wu.jpg"
+    }
+  },
+  {
+    "id": "versatile-v00",
+    "voice": "voice_b37127ad0a6245cf54a397dd844adf6279e71d5c37410b5dea27ff0ab9db51dc",
+    "name": "The Warm Irish Companion",
+    "gender": "female",
+    "age": 40,
+    "country": "Ireland",
+    "personality": "warm",
+    "description": "A friendly woman in her early 40s with a soft Dublin Irish accent and a gently lilting, musical cadence. Her voice is medium-pitched with a warm, rounded timbre and a natural conversational ease. Recorded in pristine studio quality with crisp clarity. She moves effortlessly between cheerful storytelling and reassuring, intimate narration.",
+    "refText": "Sure, pull up a chair and let me tell you how the day went. There's a grand story in every little moment, if you only stop to listen for it.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/versatile-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/versatile_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/versatile_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/versatile_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/versatile_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "ally-v00",
+    "voice": "voice_0ba274760b3092b748ea93ab214f18977645499668d6c110f447fb3be315e7d7",
+    "name": "The Gentle Irish Confidant",
+    "gender": "male",
+    "age": 30,
+    "country": "Ireland",
+    "personality": "warm",
+    "description": "A soft-spoken male voice in his late 30s with a lilting Irish accent and pristine studio audio. His timbre is warm and mid-range, with a slightly melodic quality and a relaxed, unhurried pace. The personality is reassuring and quietly humorous, like an old friend who always makes time for a cup of tea and a heart-to-heart.",
+    "refText": "Ah, come here to me now, sit yourself down and take the weight off. Whatever's been troublin' you today, sure we'll figure it out together, no rush at all. You're doing far better than you give yourself credit for.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/ally-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/ally_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/ally_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/ally_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/ally_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "family-man-v00",
+    "voice": "voice_e8604d140a9a13e6f0413ec1041126d7313fcceb6e972b47a19efd13c5d6f1ed",
+    "name": "The Backyard Coach Dad",
+    "gender": "male",
+    "age": 40,
+    "country": "Australia",
+    "personality": "warm",
+    "description": "A hearty, encouraging male voice in his mid-40s with a warm Australian accent. Medium-low pitch with a robust, sun-weathered timbre and an easygoing, motivating tone. Speaks at a relaxed, steady pace with the upbeat cadence of someone used to cheering from the sidelines. Crisp, clean audio with natural, friendly delivery.",
+    "refText": "Alright mate, grab your boots, we're heading out to the yard before the rain rolls in. Doesn't matter if you miss the goal a hundred times—what matters is you keep having a go. Tell you what, I'll be your goalie and your biggest fan, all at once.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/family-man-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/family-man_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/family-man_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/family-man_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/family-man_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "medical-v09",
+    "voice": "voice_2c39f0cac8f9bdb82e9a227ed7e6ccb744098cd6e36270ebb91f681492acd8f0",
+    "name": "The Empathetic Therapist",
+    "gender": "female",
+    "age": 50,
+    "country": "New Zealand",
+    "personality": "warm",
+    "description": "A calm female clinical psychologist in her mid-50s with a soft New Zealand accent. Her voice is mellow and warm with a medium-low pitch and a gentle, unhurried smoothness. She speaks slowly and thoughtfully, leaving space for reflection. Her tone is empathetic, accepting, and deeply grounding. Studio-grade recording with soft intimacy.",
+    "refText": "Take a moment, and just notice what you're feeling right now. There's no right or wrong answer here. Whatever comes up is welcome, and we can explore it together at whatever pace feels safe for you.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/medical-v09-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/medical_f009_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/medical_f009_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/medical_f009_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/medical_f009_art_wu.jpg"
+    }
+  },
+  {
+    "id": "feminine-v08",
+    "voice": "voice_61c102e3e062bac45db922a47d254275c009ff4fbd2a206824cb26d731b180db",
+    "name": "The Gentle Indian Mentor",
+    "gender": "female",
+    "age": 30,
+    "country": "India",
+    "personality": "warm",
+    "description": "A nurturing Indian woman in her late 30s with a melodic, refined Indian English accent and a warm, calming voice. Clean recording with a medium pitch and a soft, soothing texture. She speaks at a gentle, thoughtful pace, radiating patience, wisdom, and quiet encouragement.",
+    "refText": "Take your time, beta. Learning is not a race; it is a flower that blooms only when given enough sunlight and care.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/feminine-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/feminine_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/feminine_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/feminine_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/feminine_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "personable-v04",
+    "voice": "voice_5af1fb3d56c6701d58a6817d8829f6579223da6a307947533d12cea6da18f7fa",
+    "name": "The Gentle Indian Mentor",
+    "gender": "male",
+    "age": 50,
+    "country": "India",
+    "personality": "warm",
+    "description": "A warm, soft-spoken man in his 50s with a refined Indian English accent and crisp, professional audio. His voice is mellow and reassuring with a medium pitch and gentle, deliberate pacing. His tone carries patient wisdom and a fatherly kindness that puts listeners instantly at ease.",
+    "refText": "Ah, hello there, my friend. Come, sit with me a while. There is no hurry today—we shall simply talk, like old companions sharing a cup of chai in the evening.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/personable-v04-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/personable_f004_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/personable_f004_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/personable_f004_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/personable_f004_art_wu.jpg"
+    }
+  },
+  {
+    "id": "hospital-v05",
+    "voice": "voice_5e8d249fe7c709fede8d8067d4f387c7edcefd11188a8eda606482b337e19b4a",
+    "name": "The Warm Filipino Caregiver",
+    "gender": "female",
+    "age": 30,
+    "country": "Philippines",
+    "personality": "warm",
+    "description": "A nurturing female care assistant in her mid-30s with a gentle Filipino accent. Her voice is medium-pitched, soft, and reassuring, delivered at a relaxed, attentive pace. With pristine audio quality, her tone is endlessly patient and full of genuine affection.",
+    "refText": "Good morning! Did you sleep well last night? Let me help you sit up nice and slow, and then we'll get you washed and ready before breakfast comes around. There's no rush at all, okay?",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/hospital-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/hospital_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/hospital_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/hospital_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/hospital_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "host-interviewer-v01",
+    "voice": "voice_1b79616edd6d80f61a39098dfe86df067a4ee90f5f2dc156dd28c985e42c6126",
+    "name": "The Warm Lagos Storyteller",
+    "gender": "female",
+    "age": 30,
+    "country": "Nigeria",
+    "personality": "warm",
+    "description": "A vibrant female host in her early 30s with a rich, melodic voice and a Nigerian accent. She speaks with rhythmic warmth and expressive energy, drawing out the human side of every story. Her tone is generous and inviting, full of genuine laughter and curiosity. Clean studio recording with full, warm audio quality.",
+    "refText": "Ah, welcome my friends to Sunday Stories, the place where ordinary people share extraordinary journeys. Today we sit with a woman who turned a single sewing machine into a workshop employing forty hands. Pull up a chair, because this one will move you.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/host-interviewer-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/host-interviewer_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/host-interviewer_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/host-interviewer_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/host-interviewer_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "corporate-training-v03",
+    "voice": "voice_312a4f4dd5e7cd81d701b358723d8a09106f74249cf42ab800a6f64de4f40a4d",
+    "name": "The Reassuring Diversity Facilitator",
+    "gender": "female",
+    "age": 40,
+    "country": "South Africa",
+    "personality": "warm",
+    "description": "A thoughtful female voice in her 40s with clear studio audio and a gentle South African accent. Her tone is measured, empathetic, and inclusive, with a warm mid-range pitch and an unhurried pace. She's ideal for sensitive topics like inclusion, ethics, and workplace culture.",
+    "refText": "Creating an inclusive workplace begins with listening. In this session, we'll explore how our words and actions shape the experiences of those around us. There are no wrong questions here, only opportunities to learn and grow together.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/corporate-training-v03-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/corporate-training_f003_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/corporate-training_f003_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/corporate-training_f003_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/corporate-training_f003_art_wu.jpg"
+    }
+  },
+  {
+    "id": "chatty-v01",
+    "voice": "voice_70445476de75f3d749e7e750e4f64cad600994c88af5d51f6f4de3f06d73709f",
+    "name": "The Laid-Back Jamaican Host",
+    "gender": "male",
+    "age": 30,
+    "country": "Jamaica",
+    "personality": "warm",
+    "description": "A relaxed male voice in his mid-30s with a rich Jamaican accent and clean, warm recording quality. He speaks with an unhurried, musical rhythm and a deep, mellow timbre that feels like sunshine. His tone is friendly and reassuring, sprinkled with easy humor. Perfect for a breezy, feel-good chatty companion.",
+    "refText": "Ay, take it easy now, no need to rush, we have all the time in the world. Me just sit back, sip me juice, and let the conversation flow like a river. So tell me, what's been making you smile lately?",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/chatty-v01-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/chatty_f001_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/chatty_f001_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/chatty_f001_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/chatty_f001_art_wu.jpg"
+    }
+  },
+  {
+    "id": "genuine-v05",
+    "voice": "voice_8582abdcce3194daf78860fe12b71b5344c299b0ed3a99afff2c9664fdc97786",
+    "name": "The Thoughtful Philosopher",
+    "gender": "male",
+    "age": 60,
+    "country": "France",
+    "personality": "warm",
+    "description": "A man in his 60s with a refined French accent, speaking at a slow, contemplative pace. His voice has a warm, resonant timbre with a medium-low pitch and a reflective, gently melodic quality. He sounds like a lifelong thinker who savors every idea. Excellent studio recording with subtle ambient depth.",
+    "refText": "There is a quiet beauty in simply pausing to wonder. We spend so much of our lives rushing toward answers, when often it is the questions themselves that make us truly alive.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/genuine-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/genuine_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/genuine_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/genuine_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/genuine_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "elearning-voice-over-v08",
+    "voice": "voice_b55d22523b20ffcf2a20d6cfda4550f9c1d67f57477211bd029e30a026c554e4",
+    "name": "The Spirited Spanish Educator",
+    "gender": "female",
+    "age": 30,
+    "country": "Spain",
+    "personality": "warm",
+    "description": "A warm female voice in her late 30s with a gentle Spanish accent and clean professional audio. Her tone is expressive and inviting, medium-pitched, with a rhythmic, slightly animated pace. She sounds like a passionate educator who brings energy and heart to every lesson.",
+    "refText": "Hello and welcome! Today we will learn about teamwork and collaboration. When people share their strengths, something wonderful happens, and the whole team grows stronger. Let us explore how.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/elearning-voice-over-v08-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/elearning-voice-over_f008_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/elearning-voice-over_f008_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/elearning-voice-over_f008_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/elearning-voice-over_f008_art_wu.jpg"
+    }
+  },
+  {
+    "id": "homemaker-v03",
+    "voice": "voice_404e4b80ed7026fb0645b4f7e13878dc396b746f40de1a78d550ed1a13fe78cb",
+    "name": "The Calm Scandinavian Host",
+    "gender": "male",
+    "age": 30,
+    "country": "Nordic countries",
+    "personality": "warm",
+    "description": "A measured male voice in his late 30s with a soft Swedish accent. His tone is tranquil and understated, with a medium pitch that feels effortlessly reassuring. He speaks at a gentle, even pace, embracing simplicity and coziness. The voice captures a hygge sensibility of warmth and balance. Crisp, clean studio audio.",
+    "refText": "Good morning. Light a single candle, brew some coffee, and let the quiet of the early hour settle around you. A home does not need much to feel complete, only a little warmth and a little stillness.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/homemaker-v03-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/homemaker_f003_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/homemaker_f003_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/homemaker_f003_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/homemaker_f003_art_wu.jpg"
+    }
+  },
+  {
+    "id": "teacher-v03",
+    "voice": "voice_03669d82c9e929c279103e6d9d975932b4769039f08c867edd642a5fcdae371a",
+    "name": "Señora Vega - Encouraging Latin American Educator",
+    "gender": "female",
+    "age": 40,
+    "country": "Latin America",
+    "personality": "warm",
+    "description": "A female voice in her early 40s with a warm Latin American Spanish accent in her English. Clean studio recording, medium pitch with a melodic, expressive timbre and a moderate, welcoming pace. Her tone is supportive and uplifting, great for bilingual classrooms and motivational content.",
+    "refText": "Buenos días, my students. Today we will discover how plants turn sunlight into food — a kind of magic happening all around us. Let's explore it together, paso a paso.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/teacher-v03-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/teacher_f003_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/teacher_f003_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/teacher_f003_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/teacher_f003_art_wu.jpg"
+    }
+  },
+  {
+    "id": "cosmopolitan-v00",
+    "voice": "voice_d1794766ee37337a6f2ffc7084fbce5c68c12cd85f6c0ef7e96a9276d08547ea",
+    "name": "The Buenos Aires Storyteller",
+    "gender": "male",
+    "age": 30,
+    "country": "Latin America",
+    "personality": "warm",
+    "description": "A charismatic man in his mid-30s with a warm Argentine Spanish accent and pristine studio-quality audio. His voice is rich and velvety with a medium-low pitch, carrying a romantic, lingering musicality on every phrase. He speaks at a relaxed, unhurried pace with passionate inflections that suggest late nights, tango, and conversations over wine.",
+    "refText": "Come, walk with me through San Telmo as the sun goes down and the accordion begins to sing. Every cobblestone here remembers a story, and tonight, my friend, I will tell you mine.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/cosmopolitan-v00-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/cosmopolitan_f000_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/cosmopolitan_f000_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/cosmopolitan_f000_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/cosmopolitan_f000_art_wu.jpg"
+    }
+  },
+  {
+    "id": "mentor-v09",
+    "voice": "voice_c17e6c6d5062678c399b47528b5ee6e4c900789dddd900543e6454ce47dcccb9",
+    "name": "The Warm Brazilian Motivator",
+    "gender": "female",
+    "age": 40,
+    "country": "Brazil",
+    "personality": "warm",
+    "description": "A vibrant female mentor in her early 40s with a melodic Brazilian accent and a warm, mid-pitched voice full of musicality. She speaks at an expressive, flowing pace with infectious passion and emotional generosity. Her tone is joyful, heartfelt, and deeply uplifting. Crisp, broadcast-ready audio with intimate warmth.",
+    "refText": "My friend, life is meant to be lived with the whole heart, sim? You cannot dance if you are afraid to move. So let us turn this fear into rhythm and step forward together.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/mentor-v09-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/mentor_f009_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/mentor_f009_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/mentor_f009_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/mentor_f009_art_wu.jpg"
+    }
+  },
+  {
+    "id": "chef-v05",
+    "voice": "voice_92629d6b22ba13f6efe45e0aae3aed9c207af5ea474bece61fd475cdcb16c57e",
+    "name": "The Warm Lebanese Mezze Host",
+    "gender": "female",
+    "age": 50,
+    "country": "Middle East & North Africa",
+    "personality": "warm",
+    "description": "A gracious woman in her early 50s with a melodic Lebanese accent and rich, clear audio. Her voice is smooth, generous, and lightly textured, spoken at a relaxed and hospitable pace. Her tone overflows with the warmth of a family table laden with shared dishes.",
+    "refText": "Habibi, welcome to my table! Today we make hummus so smooth it melts on the tongue, with chickpeas, tahini, and a good squeeze of lemon. We always make plenty, because in my home, no one ever leaves hungry.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/chef-v05-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/chef_f005_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/chef_f005_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/chef_f005_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/chef_f005_art_wu.jpg"
+    }
+  },
+  {
+    "id": "archaeologist-v02",
+    "voice": "voice_a9b330419b817689f67824de8298e32a33ce2cd40a680da6590db6f12e01ba6c",
+    "name": "The Sahara Caravan Scholar",
+    "gender": "male",
+    "age": 50,
+    "country": "Middle East & North Africa",
+    "personality": "warm",
+    "description": "A male archaeologist in his early 50s with a deep, resonant voice and a Moroccan Arabic-inflected accent. He speaks slowly and poetically, his rich lower register evoking firelit storytelling. High-quality audio with a warm, hospitable tone that feels like an invitation.",
+    "refText": "For centuries, these dunes swallowed entire cities, hiding them from the world. Today, the wind has revealed a doorway, and we shall be the first to cross its threshold in nearly a thousand years.",
+    "refAudio": "https://boson-hackathon-voices.pages.dev/audio/archaeologist-v02-s0.mp3",
+    "avatar": {
+      "pr_hs": "https://boson-hackathon-voices.pages.dev/images/archaeologist_f002_pr_hs.jpg",
+      "art_hs": "https://boson-hackathon-voices.pages.dev/images/archaeologist_f002_art_hs.jpg",
+      "pr_wu": "https://boson-hackathon-voices.pages.dev/images/archaeologist_f002_pr_wu.jpg",
+      "art_wu": "https://boson-hackathon-voices.pages.dev/images/archaeologist_f002_art_wu.jpg"
+    }
+  }
+]

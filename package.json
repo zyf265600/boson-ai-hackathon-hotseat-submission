@@ -1,0 +1,45 @@
+{
+  "name": "hotseat",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HotSeat: a three-interviewer AI panel built on Higgs Realtime and Higgs TTS 3",
+  "scripts": {
+    "dev": "concurrently -n server,client,whisper -c blue,green,gray \"npm:dev:server\" \"npm:dev:client\" \"npm:dev:whisper\"",
+    "dev:client": "vite",
+    "dev:whisper": "whisper-server -m .cache/whisper/ggml-large-v3-turbo-q5_0.bin --port 8178",
+    "dev:server": "tsx watch server/index.ts",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --noEmit",
+    "avatar:lines": "tsx scripts/avatar-lines.ts",
+    "format": "prettier --write .",
+    "report": "tsx scripts/report.ts",
+    "avatar:idle": "tsx scripts/avatar-idle.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.1.0",
+    "@ricky0123/vad-web": "0.0.30",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "html-to-image": "^1.11.13",
+    "jspdf": "^4.2.1",
+    "onnxruntime-web": "1.29.0",
+    "pdfjs-dist": "^6.4.299",
+    "pg": "^8.13.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "prettier": "3.3.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
+  }
+}

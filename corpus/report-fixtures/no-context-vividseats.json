@@ -1,0 +1,90 @@
+{
+  "note": "Test fixture for npm run report: no-context-vividseats. The strong VividSeats interview, but the opening skips the problem and the goal, to test the STAR check and its added drill. expectBands lists the overall bands that count as a pass; expectStar the STAR statuses; the task allows vague as well, because \"I designed and built\" implies a goal without stating one, and the judge has given both.",
+  "expectBands": ["ready", "nearly"],
+  "transcript": [
+    {
+      "speaker": "moderator",
+      "text": "Hello, and welcome. I'm joined by our Technical Lead and Mentor, and we're excited to hear about your work. Could you describe a technical project you've built, focusing on the problem, the architecture, and your specific contribution?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "I designed and built a multi-tiered SQLite caching layer in Java, with an in-process tier and a shared tier on each node, in front of Algolia search. I rolled it out with Argo Rollouts canary deployments on Kubernetes, with production traffic increasing gradually. It reduced request latency from about 250 milliseconds to 30 at p99. I also restructured the pagination and the batching logic of our batch indexing job, and that cut CPU usage by over 60 percent."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "Thanks for the overview. Let's get started."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "How does a request decide whether the SQLite cache can answer it, or whether it has to go to Algolia?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "Each search request is normalized into a cache key from its filters, sort and page. Only query types on an allow list go to the cache: venue pages, performer pages and category browsing, which change maybe once a day. Those keys hit an in-process SQLite tier first, then a shared SQLite file on the node. The first tier expires entries after fifteen minutes, the second after two hours. A miss falls through to Algolia and writes the result back to both tiers. Anything with prices or inventory never touches the cache, because that changes minute to minute."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "Interesting."
+    },
+    {
+      "speaker": "technical_lead",
+      "text": "If an event's details change, the second tier can serve the old version for up to two hours. How did you deal with that?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "That was the main risk, and I looked at three options. Short expiry times everywhere would have killed most of the hit rate. Invalidating on every write from the catalog service meant changing a service my team did not own. So I went with purging: the catalog already publishes change events, and I added a consumer that deletes the affected keys from both tiers, usually within a few seconds. The two hour expiry is only a backstop if that consumer falls behind. Product agreed that a stale performer bio for a while was acceptable. If staleness ever mattered more, I would shorten the second tier's expiry before adding more machinery."
+    },
+    {
+      "speaker": "mentor",
+      "text": "Thanks, that's really clear."
+    },
+    {
+      "speaker": "mentor",
+      "text": "How did you confirm that the drop from 250 to 30 milliseconds came from the cache and not from something else?"
+    },
+    {
+      "speaker": "candidate",
+      "text": "We compared canary pods against stable pods during the Argo rollout, with the same traffic split and in the same hours. On the canary, p99 for the cached query types was around 30 milliseconds against 250 on stable, and the hit rate there was about 70 percent, so the improvement followed the hit rate. One limit is that the 30 milliseconds is for the cached query types only. Whole page latency improved much less, because other calls dominate a page load."
+    },
+    {
+      "speaker": "moderator",
+      "text": "That's all from our panel today. Thank you so much for walking us through your project, and best of luck!"
+    }
+  ],
+  "questions": [
+    {
+      "round": 1,
+      "difficulty": "medium",
+      "speaker": "technical_lead",
+      "result": {
+        "question": "How does a request decide whether the SQLite cache can answer it, or whether it has to go to Algolia?"
+      }
+    },
+    {
+      "round": 2,
+      "difficulty": "medium",
+      "speaker": "technical_lead",
+      "result": {
+        "question": "If an event's details change, the second tier can serve the old version for up to two hours. How did you deal with that?",
+        "assessment": "solid",
+        "reason": "Explains the cache key, the two tiers with their expiry times, and what bypasses the cache."
+      }
+    },
+    {
+      "round": 3,
+      "difficulty": "medium",
+      "speaker": "mentor",
+      "result": {
+        "question": "How did you confirm that the drop from 250 to 30 milliseconds came from the cache and not from something else?",
+        "assessment": "solid",
+        "reason": "Names three options and the cost of each, and when the choice would change."
+      }
+    }
+  ],
+  "expectStar": {
+    "situation": ["missing"],
+    "task": ["missing", "vague"],
+    "action": ["covered"],
+    "result": ["covered"]
+  }
+}

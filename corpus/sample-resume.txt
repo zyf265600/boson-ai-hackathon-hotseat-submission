@@ -1,0 +1,25 @@
+SAMPLE CANDIDATE
+Test fixture for the report (npm run report -- <log> --resume corpus/sample-resume.txt).
+Every fact below comes from the test scripts in corpus/candidate-scripts/, so a simulated candidate's answers can be checked against it.
+
+EXPERIENCE
+
+Backend Software Engineer Intern, VividSeats, Toronto (Jan 2025 - Apr 2025)
+- Designed and implemented a multi-tiered SQLite caching layer in Java in front of Algolia search for time-insensitive queries, cutting p99 request latency from ~250 ms to ~30 ms and improving backend throughput
+- Rolled the cache out with Argo Rollouts canary deployments on Kubernetes (AWS)
+- Restructured the pagination and batching logic of the batch indexing job, reducing CPU utilization by over 60%
+
+Research Assistant, Engineering Intelligent Software and Programming Languages group (Prof. Werner Dietl), University of Waterloo (Jan 2025 - Dec 2025)
+- Profiled the Checker Framework's Nullness Checker and removed redundant computations, improving the precision and scalability of its static analysis
+- Contributed to refactoring and benchmarking of the framework's analysis pipeline
+
+RESEARCH
+
+The Canary in the Embedding Mine (supervised by Prof. Sebastian Fischmeister), University of Waterloo
+- Studied retrieval poisoning attacks on RAG-based LLM code generation: built an OpenSSL document store and evaluated 58 adversarial documents across 14,218 C functions
+- Built a top-k vector retrieval pipeline with OpenAI text-embedding-3-large and fine-tuned MPNet embeddings
+- Ran paired clean vs. poisoned generation experiments with GPT-4.1 and GPT-5, evaluated by compilation, OpenSSL unit tests, memory analysis and fuzz testing
+- Designed the canary-function selection method: a linear regression on code distance, function length, brace depth and fan-in identifies the functions most sensitive to document-store manipulation
+
+SKILLS
+Java, Python, C, SQLite, Kubernetes, AWS, Algolia, Argo Rollouts, static analysis
