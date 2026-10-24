@@ -57,3 +57,34 @@ While the waiting screen shows, HotSeat creates the interview, prepares the pane
 The caption panel keeps the whole conversation and can be scrolled back. The panel's words appear in step with the audio. While the candidate speaks, the browser's speech recognition shows a quick draft, which is replaced by the final transcript (Whisper, with Higgs STT as backup).
 
 Code: `src/interview.ts`, `src/orchestrator/`, `src/ui/Captions.tsx`, `src/audio/liveTranscript.ts`.
+
+# Contribution for Peize Zhang
+
+## Talking-head interviewers
+
+With `AVATAR=true` in `.env`, the Technical Lead and the Mentor appear on camera as Higgs Avatar videos when their selected voices have a photo. The moderator stays voice only. The six preset voices have no photo, so a seat using one of them also stays voice only.
+
+## Three kinds of video
+
+| Video | When it plays | How it is made |
+|---|---|---|
+| **Fixed lines** (silence prompts, the wrap-up, backup questions) | Whenever the panelist says one of these lines | Rendered ahead and kept in `.cache/avatar/`. Matching videos are reused; the cache includes the voice, line, language, emotion and photo. |
+| **Follow-up questions** | Each new question | Rendered while the candidate is still answering. If the complete clip is ready, it plays directly; otherwise the question is streamed as video. If video cannot start, the seat falls back to audio. |
+| **Listening loop** | While the panelist is silent | A silent clip per custom photo in `public/idle/`, containing a continuous segment followed by its reverse to keep the loop boundary continuous. |
+
+## Photos and listening loops
+
+- **Interview portraits**: the 20 Recommended voices have custom 4:3 photos in `public/portraits/<voice id>.jpg` or `.png`, facing the camera to match the 640 × 480 video. Other catalog voices can use their original photos.
+- **Closed-mouth listening**: the idle script generates 60-second silent takes and checks the face frame by frame. It looks for a continuous 15-second segment with the mouth closed and little head movement, especially near the turnaround.
+- **Loop playback**: playing that segment forward and backward produces a loop of about 30 seconds. If no suitable 15-second segment is found, the script can try more takes or use a shorter segment. The browser plays the saved file, so replaying it does not generate more video.
+- **Fallback**: if a listening loop is unavailable, the interviewer keeps their still photo.
+
+## Adding or replacing a photo
+
+1. Save the photo as `public/portraits/<voice id>.jpg` or `.png`, using the catalog id from `shared/interviewer-voices.json`.
+2. Run `npm run avatar:lines -- --portraits --lang en,zh` to update the photo list and render missing fixed-line videos. Existing matching videos are skipped; replacing a photo creates new cache entries. Add `--status` to check progress without rendering.
+3. Run `npm run avatar:idle -- --only <voice id>` to make its listening loop. This needs macOS and ffmpeg. Inspect the saved loop before using it in an interview.
+
+Rendering uses Boson credits: about $0.07 per minute of generated 640 × 480 video, including takes that are later trimmed or replaced. Playing saved clips again does not incur another video-generation charge.
+
+Code: `server/boson.ts`, `src/avatar/AvatarStage.ts`, `src/ui/Tile.tsx`, `scripts/avatar-lines.ts`, `scripts/avatar-idle.ts`, `scripts/idle-mouth.swift`, `shared/settings.ts`.
