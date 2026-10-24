@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from "react";
-import { PEOPLE } from "../../shared/people";
-import { INTERVIEW_LENGTHS } from "../../shared/panel";
 import { LANGUAGES } from "../../shared/languages";
-import { PRESET_VOICES, RECOMMENDED_VOICES, VOICE_CATALOG } from "../../shared/settings";
+import { PRESET_VOICES, VOICE_CATALOG } from "../../shared/settings";
 import { LiveBars, Waveform } from "./Waveform";
 import { UserMenu, saveRole, savedRole, type Role } from "./UserMenu";
 import { useScrollScene } from "./useScrollScene";
@@ -40,15 +38,10 @@ interface Scene {
   content: ReactNode;
 }
 
-const { moderator, technical_lead: lead, mentor } = PEOPLE;
-const SHORTEST = INTERVIEW_LENGTHS[0];
-const LONGEST = INTERVIEW_LENGTHS.at(-1);
 const LANGUAGE_COUNT = Object.keys(LANGUAGES).length;
 /** Every interviewer a seat can be given: the catalog voices and the presets, rounded down to "100+". */
 const INTERVIEWERS = VOICE_CATALOG.length + PRESET_VOICES.length;
 const INTERVIEWER_COUNT = `${Math.floor(INTERVIEWERS / 10) * 10}+`;
-/** The recommended voices all have a photo and pre-rendered video, so they speak on camera. */
-const ON_CAMERA = RECOMMENDED_VOICES.length;
 
 /**
  * A scene's text, at most two sentences of about 70 characters: each starts on
@@ -100,11 +93,46 @@ const SCENES: Scene[] = [
         </Lines>
         <div className="home-cta">
           <StepOut />
-          <a className="home-secondary" href="#how">
+          <a className="home-secondary" href="#follow-ups">
             See how it works
           </a>
         </div>
       </div>
+    ),
+  },
+  {
+    id: "follow-ups",
+    photo: { src: "/home/desks-windows.jpg", by: "Sam", page: "xzZ0PZobjek" },
+    focus: "85% 70%",
+    scale: 1.4,
+    align: "left",
+    content: (
+      <>
+        <p className="home-kicker">Meaningful follow-ups</p>
+        <h2>Every question comes from your answer.</h2>
+        <Lines>
+          {[
+            "No question bank: each follow-up presses on what you just said.",
+            "Know your project inside out before a real interviewer asks.",
+          ]}
+        </Lines>
+      </>
+    ),
+  },
+  {
+    id: "flow",
+    photo: { src: "/home/laptop-night.jpg", by: "Chirayu Trivedi", page: "nPJFU_zTVhA" },
+    focus: "70% 60%",
+    scale: 1.25,
+    align: "left",
+    content: (
+      <>
+        <p className="home-kicker">Smooth transitions</p>
+        <h2>Fully immersive, start to finish.</h2>
+        <Lines>
+          {["No dead air between questions.", "It flows like a real interview, from hello to goodbye."]}
+        </Lines>
+      </>
     ),
   },
   {
@@ -115,7 +143,7 @@ const SCENES: Scene[] = [
     align: "center",
     content: (
       <>
-        <p className="home-kicker">The panel</p>
+        <p className="home-kicker">Immersive experience</p>
         {/* The number of interviewers, called out large (user, 2026-10-23). */}
         <h2>
           <span className="home-stat">{INTERVIEWER_COUNT}</span>
@@ -123,8 +151,8 @@ const SCENES: Scene[] = [
         </h2>
         <Lines>
           {[
+            "Pick a voice and a face for each seat; all of them talk on camera.",
             "A host runs the interview; a lead and a mentor take turns asking.",
-            `Keep ${moderator.name}, ${lead.name} and ${mentor.name}, or pick your own; ${ON_CAMERA} of them talk on camera.`,
           ]}
         </Lines>
         <Lines className="home-note">{["Built on Higgs Realtime, Higgs TTS 3 and Higgs Avatar."]}</Lines>
@@ -132,57 +160,19 @@ const SCENES: Scene[] = [
     ),
   },
   {
-    id: "listens",
-    photo: { src: "/home/laptop-night.jpg", by: "Chirayu Trivedi", page: "nPJFU_zTVhA" },
-    focus: "70% 60%",
-    scale: 1.25,
-    align: "left",
-    content: (
-      <>
-        <p className="home-kicker">It listens</p>
-        <h2>Take your time. The panel waits.</h2>
-        <Lines>
-          {[
-            "Pause to think and nobody jumps in; the panel waits until you finish.",
-            "Ask for a repeat or an explanation, or cut in with headphones on.",
-          ]}
-        </Lines>
-      </>
-    ),
-  },
-  {
-    id: "asks",
-    photo: { src: "/home/desks-windows.jpg", by: "Sam", page: "xzZ0PZobjek" },
-    focus: "85% 70%",
-    scale: 1.4,
-    align: "left",
-    content: (
-      <>
-        <p className="home-kicker">It asks</p>
-        <h2>Every question comes from your answer.</h2>
-        <Lines>
-          {[
-            "No question bank: each follow-up presses on what you just said.",
-            "The next question is written while you speak, so there is no dead air.",
-          ]}
-        </Lines>
-      </>
-    ),
-  },
-  {
-    id: "how",
+    id: "report",
     photo: { src: "/home/talking-hall.jpg", by: "Michael Shtern", page: "MN6mNZ9vgXw" },
     focus: "30% 60%",
     scale: 1.3,
     align: "right",
     content: (
       <>
-        <p className="home-kicker">How it works</p>
-        <h2>Pick a role. Introduce one project. Get your report.</h2>
+        <p className="home-kicker">Professional report</p>
+        <h2>Know exactly what to fix next.</h2>
         <Lines>
           {[
-            `Add your résumé, then set the role, language and ${SHORTEST} to ${LONGEST} minutes.`,
-            "The report scores five skills, checks your résumé and gives you drills.",
+            "Scores on five skills, backed by quotes from your own answers.",
+            "Feedback from each interviewer, a résumé check and drills to improve.",
           ]}
         </Lines>
       </>
@@ -274,9 +264,9 @@ export function Home() {
               <span className="brand-word">HotSeat</span>
             </span>
             <nav className="home-nav" aria-label="Sections">
+              <a {...link("follow-ups")}>Features</a>
               <a {...link("panel")}>The panel</a>
-              <a {...link("listens")}>Features</a>
-              <a {...link("how")}>How it works</a>
+              <a {...link("report")}>Report</a>
             </nav>
             <div className="lobby-top-right">
               <UserMenu
