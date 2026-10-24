@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties, type MouseEvent, type 
 import { PEOPLE } from "../../shared/people";
 import { INTERVIEW_LENGTHS } from "../../shared/panel";
 import { LANGUAGES } from "../../shared/languages";
-import { PRESET_VOICES, VOICE_CATALOG } from "../../shared/settings";
+import { PRESET_VOICES, RECOMMENDED_VOICES, VOICE_CATALOG } from "../../shared/settings";
 import { LiveBars, Waveform } from "./Waveform";
 import { UserMenu, saveRole, savedRole, type Role } from "./UserMenu";
 import { useScrollScene } from "./useScrollScene";
@@ -47,6 +47,8 @@ const LANGUAGE_COUNT = Object.keys(LANGUAGES).length;
 /** Every interviewer a seat can be given: the catalog voices and the presets, rounded down to "100+". */
 const INTERVIEWERS = VOICE_CATALOG.length + PRESET_VOICES.length;
 const INTERVIEWER_COUNT = `${Math.floor(INTERVIEWERS / 10) * 10}+`;
+/** The recommended voices all have a photo and pre-rendered video, so they speak on camera. */
+const ON_CAMERA = RECOMMENDED_VOICES.length;
 
 /**
  * A scene's text, at most two sentences of about 70 characters: each starts on
@@ -86,7 +88,7 @@ const SCENES: Scene[] = [
           Live AI panel interview
         </p>
         <h1>
-          Take the hot seat{" "}
+          <span className="line">Take the hot seat</span>{" "}
           <span className="line">
             before the <span className="grad">real one.</span>
           </span>
@@ -121,13 +123,11 @@ const SCENES: Scene[] = [
         </h2>
         <Lines>
           {[
-            "A moderator runs the room; a lead and a mentor ask the follow-ups.",
-            `Keep ${moderator.name}, ${lead.name} and ${mentor.name}, or give each seat a new name and voice.`,
+            "A host runs the interview; a lead and a mentor take turns asking.",
+            `Keep ${moderator.name}, ${lead.name} and ${mentor.name}, or pick your own; ${ON_CAMERA} of them talk on camera.`,
           ]}
         </Lines>
-        <Lines className="home-note">
-          {["The moderator speaks through Higgs Realtime; the two interviewers through Higgs TTS 3."]}
-        </Lines>
+        <Lines className="home-note">{["Built on Higgs Realtime, Higgs TTS 3 and Higgs Avatar."]}</Lines>
       </>
     ),
   },
@@ -162,8 +162,8 @@ const SCENES: Scene[] = [
         <h2>Every question comes from your answer.</h2>
         <Lines>
           {[
-            "No question bank: every follow-up builds on your own words and role.",
-            "Vague answers get pressed, and nothing is asked twice.",
+            "No question bank: each follow-up presses on what you just said.",
+            "The next question is written while you speak, so there is no dead air.",
           ]}
         </Lines>
       </>
@@ -178,11 +178,11 @@ const SCENES: Scene[] = [
     content: (
       <>
         <p className="home-kicker">How it works</p>
-        <h2>Pick a role. Introduce one project. Answer until time is up.</h2>
+        <h2>Pick a role. Introduce one project. Get your report.</h2>
         <Lines>
           {[
-            "In the prep room, set the role, company, language and difficulty.",
-            `Interviews run ${SHORTEST} to ${LONGEST} minutes, and the panel closes on time.`,
+            `Add your résumé, then set the role, language and ${SHORTEST} to ${LONGEST} minutes.`,
+            "The report scores five skills, checks your résumé and gives you drills.",
           ]}
         </Lines>
       </>
@@ -304,7 +304,9 @@ export function Home() {
 
           {scene === SCENES.length - 1 && (
             <footer className="home-footer">
-              Built for the Boson AI × MScAC Higgs Audio Hackathon 2026 · Photos from Unsplash by{" "}
+              Built for the Boson AI × MScAC Higgs Audio Hackathon 2026
+              <br />
+              Photos from Unsplash by{" "}
               {SCENES.map((s, i) => (
                 <span key={s.id}>
                   <a href={`https://unsplash.com/photos/${s.photo.page}`} target="_blank" rel="noreferrer">

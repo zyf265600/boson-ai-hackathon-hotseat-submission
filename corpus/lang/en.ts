@@ -114,6 +114,12 @@ export const en: LanguagePack = {
     "project's background that they have not answered yet, such as who it was for, whether it was a team inside a company, how big the team was, " +
     `or what their own part was. Do not ask anything technical or in depth: ${next}, the Technical Lead, asks that next. ` +
     "Ask only one question, and keep the whole reply under 30 words.",
+  timeBuyerAgain: (said, asked, answer, next) =>
+    `The interview is already in progress. The candidate introduced their project: "${said}". You then asked: "${asked}", and they answered: "${answer}". ` +
+    "In a few words, acknowledge the answer (no praise, no greeting). Then ask one more short, light question about the project's " +
+    "background that none of this has covered yet, such as who it was for, how long it took, how big the team was, or what their own part was. " +
+    `Do not ask anything technical or in depth: ${next}, the Technical Lead, asks that next. ` +
+    "Ask only one question, and keep the whole reply under 25 words.",
   sayAgain: "Sorry, I didn't catch that. Could you say it again?",
   missedPart: "Sorry, I missed part of your answer. Could you say that again?",
   resume: "Sorry, the connection dropped for a moment. We're back now, so let's continue.",

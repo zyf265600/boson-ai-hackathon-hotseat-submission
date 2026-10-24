@@ -115,6 +115,12 @@ export const es: LanguagePack = {
     "del proyecto que todavía no haya respondido, por ejemplo para quién era, si era un equipo dentro de una empresa, qué tan grande era el equipo " +
     `o cuál fue su propia parte. No preguntes nada técnico ni en profundidad: eso lo pregunta a continuación ${next}, el Líder Técnico. ` +
     "Haz una sola pregunta y que toda la respuesta tenga menos de 30 palabras.",
+  timeBuyerAgain: (said, asked, answer, next) =>
+    `La entrevista ya está en curso. El candidato presentó su proyecto: "${said}". Luego preguntaste: "${asked}", y respondió: "${answer}". ` +
+    "En pocas palabras, reconoce la respuesta (sin elogios, sin saludar). Luego haz otra pregunta corta y ligera sobre el contexto " +
+    "del proyecto que nada de esto haya cubierto todavía, por ejemplo para quién era, cuánto tiempo llevó, qué tan grande era el equipo o cuál fue su propia parte. " +
+    `No preguntes nada técnico ni en profundidad: eso lo pregunta a continuación ${next}, el Líder Técnico. ` +
+    "Haz una sola pregunta y que toda la respuesta tenga menos de 25 palabras.",
   sayAgain: "Perdón, no te escuché bien. ¿Podrías repetirlo?",
   missedPart: "Perdón, me perdí una parte de tu respuesta. ¿Podrías repetirla?",
   resume: "Perdón, la conexión se cortó un momento. Ya estamos de vuelta, así que sigamos.",

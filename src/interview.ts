@@ -27,6 +27,7 @@ import {
   resumeLine,
   sayAgainLine,
   substituteQuestion,
+  timeBuyerAgainTask,
   timeBuyerTask,
   type Asked,
 } from "../corpus/realtime";
@@ -344,6 +345,12 @@ export class Interview {
   private aheadUnanswered: string | undefined;
   /** Realtime has asked the Time Buyer after the introduction (askTimeBuyer). */
   private timeBought = false;
+  /** The project introduction, for a second Time Buyer (askTimeBuyerAgain). */
+  private introduction = "";
+  /** The first Time Buyer's words once a second one is asked (askTimeBuyerAgain); never twice more. */
+  private timeBuyerFirst: string | undefined;
+  /** Round `round`'s question written ahead, and whether its avatar video has finished rendering (or failed). */
+  private aheadVideo: { round: number; settled: boolean } | null = null;
   /**
    * The Time Buyer's words, for every question written after it ("" while it is being asked,
    * when round 1 is written): never asked again. Undefined if there was none.
@@ -826,6 +833,9 @@ export class Interview {
           // The project introduction: Realtime asks the Time Buyer while round 1's question is written.
           // Already past the length (2 minutes, a long introduction): nextRound closes instead.
           if (this.round === 0 && !this.timeBought && !this.overTime()) return this.askTimeBuyer(answer);
+          // Its answer ended before round 1's video was rendered: one more background question first.
+          if (this.round === 0 && this.timeBought && this.timeBuyerFirst === undefined && this.round1VideoPending())
+            return this.askTimeBuyerAgain(answer);
           return this.nextRound(false, undefined, this.takeEarly(answer));
       }
     });
@@ -1086,6 +1096,7 @@ export class Interview {
   private async askTimeBuyer(intro: string): Promise<void> {
     const epoch = this.epoch;
     this.timeBought = true;
+    this.introduction = intro;
     this.timeBuyerQuestion = "";
     this.dropEarly();
     this.startAhead(1);
@@ -1100,6 +1111,48 @@ export class Interview {
     if (this.halted(epoch)) return;
     this.timeBuyerQuestion = said || undefined;
     if (!said) return this.nextRound(false);
+    this.asked = { speaker: "moderator", question: said };
+    this.askedAudio = null;
+    this.askedVideo = null;
+    this.clarifications = 0;
+    this.resumeAt = "askAgain";
+    return this.candidateTurn("new");
+  }
+
+  /**
+   * True when the Technical Lead is on camera and round 1's question, written ahead during
+   * the Time Buyer, is still being written or rendered as avatar video. A whole render takes
+   * about 10–15 s after the question is in, so a short answer to the Time Buyer ends first;
+   * the question would then stream, with about 5 s before the first frame (2026-10-24).
+   */
+  private round1VideoPending(): boolean {
+    if (this.overTime() || !this.cameras.has(roundPlan(1).speaker)) return false;
+    return this.ahead?.round === 1 && this.aheadVideo?.round === 1 && !this.aheadVideo.settled;
+  }
+
+  /**
+   * A second Time Buyer (2026-10-24, the user's request): the first one's answer ended while
+   * round 1's avatar video was still rendering, so Realtime asks one more light background
+   * question, and the Technical Lead's first question is then seen and heard together.
+   * Asked once at most; if its answer also ends first, round 1 streams as before.
+   */
+  private async askTimeBuyerAgain(answer: string): Promise<void> {
+    const epoch = this.epoch;
+    const first = this.timeBuyerQuestion ?? "";
+    this.timeBuyerFirst = first;
+    this.dropEarly();
+    this.cb.onDebug?.({ type: "time_buyer_again", reason: "round 1's avatar video is still rendering" });
+    this.resumeAt = "nextQuestion";
+    this.cb.onPhase("panel");
+    const said = await this.moderatorSays(
+      timeBuyerAgainTask(this.lang, this.introduction, first, answer, this.people.technical_lead.name),
+      true,
+      this.floorFor("timeBuyer", true),
+    );
+    if (this.halted(epoch)) return;
+    if (!said) return this.nextRound(false);
+    // Both background questions, so no later question asks them again.
+    this.timeBuyerQuestion = [first, said].filter(Boolean).join(" ") || undefined;
     this.asked = { speaker: "moderator", question: said };
     this.askedAudio = null;
     this.askedVideo = null;
@@ -1550,13 +1603,17 @@ export class Interview {
     call.ahead = true;
     this.aheadUnanswered = undefined;
     this.ahead = call;
+    const video = { round, settled: false };
+    this.aheadVideo = video;
     const { speaker } = roundPlan(round);
     const difficulty = difficultyFor(this.difficulties, round);
     this.cb.onDebug?.({ type: "question_start", round, mode: "fast", difficulty, speaker, ahead: true });
     void call.result.then((q) => {
-      if (q instanceof Error || this.stopped || !this.cameras.has(q.speaker)) return;
+      if (q instanceof Error || this.stopped || !this.cameras.has(q.speaker)) return void (video.settled = true);
       // Rendered whole like a fixed line (10–25 s); speakQuestion plays it if it is in by then, else streams.
-      this.lineVideo(q.speaker, q.question, q.emotion).catch(() => undefined);
+      this.lineVideo(q.speaker, q.question, q.emotion)
+        .catch(() => undefined)
+        .finally(() => (video.settled = true));
     });
   }
 
@@ -1954,7 +2011,8 @@ export class Interview {
     // Realtime's own words: the question to repeat or explain is what it had said.
     if (floor.kind === "timeBuyer" && floor.text) {
       this.asked = { speaker: "moderator", question: floor.text };
-      this.timeBuyerQuestion = floor.text;
+      // Cut into the second Time Buyer: the first is still one not to ask again.
+      this.timeBuyerQuestion = [this.timeBuyerFirst, floor.text].filter(Boolean).join(" ");
     }
     if (floor.kind === "opening") {
       // Cut before the last sentence (the ask for a project): the candidate has not been asked yet,

@@ -147,6 +147,8 @@ export type DebugEvent =
   | { type: "intent"; intent: Intent; by?: "deepseek-flash" | "rule"; text: string }
   /** The candidate was silent this long after the question; the asker says `text`. */
   | { type: "silence_prompt"; seconds: number; text: string }
+  /** Realtime asks a second Time Buyer: round 1's avatar video was still rendering (askTimeBuyerAgain). */
+  | { type: "time_buyer_again"; reason: string }
   /** The question is marked unanswered and the interview moves on. */
   | { type: "unanswered"; reason: string }
   /** The interview length chosen in the lobby (at the start), and when it ran out (between answers). */

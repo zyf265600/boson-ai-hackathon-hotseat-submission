@@ -117,6 +117,13 @@ export const de: LanguagePack = {
     "wie groß das Team war oder was sein eigener Anteil war. " +
     `Fragen Sie nichts Technisches oder Vertiefendes: Das fragt als Nächstes ${next}, der Technische Leiter. ` +
     "Stellen Sie nur eine Frage, insgesamt höchstens 30 Wörter.",
+  timeBuyerAgain: (said, asked, answer, next) =>
+    `Das Interview läuft bereits. Der Kandidat hat sein Projekt vorgestellt: „${said}“. Sie haben dann gefragt: „${asked}“, und er hat geantwortet: „${answer}“. ` +
+    "Gehen Sie in wenigen Worten auf die Antwort ein (kein Lob, keine Begrüßung). Stellen Sie dann noch eine kurze, leichte Frage " +
+    "zum Hintergrund des Projekts, die nichts davon schon abgedeckt hat, etwa für wen es war, wie lange es gedauert hat, " +
+    "wie groß das Team war oder was sein eigener Anteil war. " +
+    `Fragen Sie nichts Technisches oder Vertiefendes: Das fragt als Nächstes ${next}, der Technische Leiter. ` +
+    "Stellen Sie nur eine Frage, mit insgesamt weniger als 25 Wörtern.",
   sayAgain: "Entschuldigung, das habe ich nicht verstanden. Könnten Sie es noch einmal sagen?",
   missedPart: "Entschuldigung, ich habe einen Teil Ihrer Antwort verpasst. Könnten Sie das noch einmal sagen?",
   resume: "Entschuldigung, die Verbindung war kurz unterbrochen. Jetzt sind wir wieder da, also machen wir weiter.",

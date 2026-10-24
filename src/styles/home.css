@@ -256,6 +256,73 @@ html.snap {
   color: #d3e3ea;
 }
 
+/*
+ * On opening the page (2026-10-24, the user's requests): the screen starts black and the
+ * first photo is uncovered from the bottom middle outwards, with the header, the scene dots
+ * and the wave fading in; then the label and both title lines come up from below together,
+ * then the two buttons, and last the line of smaller text between them. Each piece fades in
+ * as it rises: the title from 4rem below, the buttons and the smaller text from 1.25rem.
+ */
+/* How far the photo is uncovered: the radius of the clear circle around the bottom middle. */
+@property --reveal {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 140%;
+}
+
+/* The photo and its blue tint together: the tint alone would show as a blue screen. */
+.home-scene:first-of-type > .home-figure,
+.home-scene:first-of-type::before {
+  -webkit-mask-image: radial-gradient(circle at 50% 100%, #000 var(--reveal), transparent calc(var(--reveal) + 40%));
+  mask-image: radial-gradient(circle at 50% 100%, #000 var(--reveal), transparent calc(var(--reveal) + 40%));
+  animation: home-reveal 2.4s linear both;
+}
+
+.home-stage > .lobby-top,
+.home-stage > .home-dots,
+.home-stage > .waveform {
+  animation: home-fade 1.2s ease-out 0.65s both;
+}
+
+/* The title travels farthest; the buttons and the smaller text only a short way. */
+.home-hero .eyebrow,
+.home-hero h1 .line {
+  --arrive-from: 4rem;
+  animation: home-arrive 1.25s cubic-bezier(0.22, 1, 0.36, 1) 1.3s both;
+}
+
+.home-hero .home-cta {
+  --arrive-from: 1.25rem;
+  animation: home-arrive 1s cubic-bezier(0.22, 1, 0.36, 1) 1.9s both;
+}
+
+.home-hero .lobby-lede {
+  --arrive-from: 1.25rem;
+  animation: home-arrive 1.15s cubic-bezier(0.22, 1, 0.36, 1) 2.55s both;
+}
+
+@keyframes home-reveal {
+  from {
+    --reveal: -25%;
+  }
+  to {
+    --reveal: 105%;
+  }
+}
+
+@keyframes home-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes home-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(var(--arrive-from));
+  }
+}
+
 .home-cta {
   display: flex;
   flex-wrap: wrap;
@@ -397,6 +464,18 @@ html.snap {
     transition: none;
     --focus: 1;
     --rise: 1;
+  }
+
+  .home-scene:first-of-type > .home-figure,
+  .home-scene:first-of-type::before,
+  .home-stage > .lobby-top,
+  .home-stage > .home-dots,
+  .home-stage > .waveform,
+  .home-hero .eyebrow,
+  .home-hero h1 .line,
+  .home-hero .lobby-lede,
+  .home-hero .home-cta {
+    animation: none;
   }
 }
 

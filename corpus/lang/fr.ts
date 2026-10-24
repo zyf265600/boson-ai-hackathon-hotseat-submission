@@ -121,6 +121,12 @@ export const fr: LanguagePack = {
     "contexte du projet, à laquelle il n'a pas encore répondu : par exemple pour qui c'était, si c'était une équipe au sein d'une entreprise, " +
     `la taille de l'équipe ou sa propre part. Ne posez rien de technique ni d'approfondi : ${next}, le Responsable technique, s'en charge ensuite. ` +
     "Une seule question, et moins de 30 mots en tout.",
+  timeBuyerAgain: (said, asked, answer, next) =>
+    `L'entretien est déjà en cours. Le candidat a présenté son projet : « ${said} ». Vous avez ensuite demandé : « ${asked} », et il a répondu : « ${answer} ». ` +
+    "En quelques mots, prenez acte de la réponse (sans compliment, sans salutation). Posez ensuite une autre question courte et légère " +
+    "sur le contexte du projet, que rien de tout cela n'a encore abordée : par exemple pour qui c'était, combien de temps cela a pris, " +
+    `la taille de l'équipe ou sa propre part. Ne posez rien de technique ni d'approfondi : ${next}, le Responsable technique, s'en charge ensuite. ` +
+    "Une seule question, et moins de 25 mots en tout.",
   sayAgain: "Désolée, je n'ai pas bien entendu. Pourriez-vous répéter ?",
   missedPart: "Désolée, j'ai manqué une partie de votre réponse. Pourriez-vous la répéter ?",
   resume: "Désolée, la connexion a coupé un instant. Nous sommes de retour, alors continuons.",

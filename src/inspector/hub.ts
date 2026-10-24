@@ -448,6 +448,9 @@ export class InspectorHub {
           `Interview length (${e.minutes} min) reached after ${(e.elapsedMs / 60_000).toFixed(1)} min: the moderator closes now`,
         );
         break;
+      case "time_buyer_again":
+        this.say(`Second Time Buyer: ${e.reason}`);
+        break;
       case "unanswered":
         this.say(`Marked unanswered: ${e.reason}`);
         break;

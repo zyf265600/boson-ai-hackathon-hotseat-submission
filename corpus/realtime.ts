@@ -65,6 +65,14 @@ export const handoffLine = (lang: Language, after: HandoffAfter, nextName: strin
  */
 export const timeBuyerTask = (lang: Language, said: string, nextName: string) => pack(lang).timeBuyer(said, nextName);
 
+/**
+ * A second Time Buyer when round 1's avatar video is not in yet as the first one's answer
+ * ends (2026-10-24): one more light background question, so the Technical Lead's first
+ * question can be seen and heard together instead of streamed after a wait.
+ */
+export const timeBuyerAgainTask = (lang: Language, said: string, asked: string, answer: string, nextName: string) =>
+  pack(lang).timeBuyerAgain(said, asked, answer, nextName);
+
 /** Nothing of the candidate's turn could be transcribed (neither Whisper nor Higgs); read with readAloud. */
 export const sayAgainLine = (lang: Language) => pack(lang).sayAgain;
 /** Part of a long answer could not be transcribed; the rest is kept. Read with readAloud. */

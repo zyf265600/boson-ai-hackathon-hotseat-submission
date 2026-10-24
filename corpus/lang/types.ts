@@ -52,6 +52,12 @@ export interface LanguagePack {
    * `next`: the Technical Lead's name in this interview, who asks the deep questions next.
    */
   timeBuyer(said: string, next: string): string;
+  /**
+   * A second Time Buyer, only when round 1's avatar video is still being rendered as the
+   * first one's answer ends (src/interview.ts askTimeBuyerAgain): `said` the introduction,
+   * `asked` Realtime's first background question, `answer` the candidate's answer to it.
+   */
+  timeBuyerAgain(said: string, asked: string, answer: string, next: string): string;
   sayAgain: string;
   missedPart: string;
   resume: string;
