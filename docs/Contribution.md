@@ -29,3 +29,31 @@ When an interview ends, HotSeat writes a report on the candidate's answers. It a
 4. The browser shows the report in four tabs (Overview, Rounds, Résumé check, Transcript) and can save it as Markdown or PDF.
 
 Code: `server/report.ts`, `shared/report.ts`, `src/ui/Report.tsx`, `src/ui/reportExport.ts`.
+
+# Contribution for Jingwen Zhong
+
+## How an interview runs
+
+### Before the call
+
+While the waiting screen shows, HotSeat creates the interview, prepares the panel's fixed lines and videos, connects the moderator (Higgs Realtime), and has the moderator's opening ready. Then a 3-2-1 countdown starts the call.
+
+### The interview
+
+1. **Opening**: the moderator greets the candidate, introduces the panel and asks them to introduce one project they built.
+2. **Background question**: the moderator thanks them and asks one short, easy question about the project (who it was for, the team, their part). Meanwhile the Technical Lead's first question is being written and turned into video. If that video is still not ready when the answer ends, the moderator asks one more short question.
+3. **Follow-ups**: the Technical Lead and the Mentor take turns. Each question is written by an LLM from what the candidate just said. The next question is written while the current one is being answered, so it is ready as soon as the candidate finishes.
+4. **Closing**: after the first answer that ends past the chosen length (2–15 minutes), the moderator closes the interview and the report is written.
+
+### Taking turns
+
+- **Has the candidate finished?** Silero VAD in the browser notices a pause of 0.5 s; an LLM then checks whether the answer sounds finished. If not, the panel waits 2 more seconds.
+- **Silence**: if the candidate says nothing, the panelist gently checks in after 8, 15 and 25 seconds; after 35 seconds the question counts as unanswered.
+- **Requests**: the candidate can ask to repeat or explain a question, skip it, or end the interview.
+- **Cutting in**: with "I'm wearing headphones" turned on, the candidate can speak while a panelist is talking; the panelist stops and listens.
+
+### Live captions
+
+The caption panel keeps the whole conversation and can be scrolled back. The panel's words appear in step with the audio. While the candidate speaks, the browser's speech recognition shows a quick draft, which is replaced by the final transcript (Whisper, with Higgs STT as backup).
+
+Code: `src/interview.ts`, `src/orchestrator/`, `src/ui/Captions.tsx`, `src/audio/liveTranscript.ts`.
