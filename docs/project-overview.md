@@ -15,7 +15,7 @@ In a technical interview, the hard part is the follow-up questions about your ow
 1. **Prep room**: the candidate picks the role, language (8), interview length (2–15 minutes), a voice for each seat (100+ voices), and can add a résumé.
 2. **Moderator opens** on Higgs Realtime and asks for a project introduction.
 3. **The candidate answers.** The browser notices pauses (Silero VAD) and an LLM checks whether the answer is finished.
-4. **Speech to text**: Whisper, with Higgs STT as backup.
+4. **Speech to text**: Higgs STT.
 5. **Next question**: an LLM writes it from the candidate's own words, at the difficulty chosen for that interviewer.
 6. **An interviewer asks it** with a Higgs TTS 3 voice and a Higgs Avatar face. Steps 3–6 repeat until time is up.
 7. **Report**: five skill scores with quotes, a résumé check and practice drills.
@@ -34,7 +34,7 @@ In a technical interview, the hard part is the follow-up questions about your ow
 | Higgs Realtime | Boson AI, WebSocket from the browser | The moderator |
 | Server (Node.js, Express) | local | Keeps API keys, calls the models, stores interviews in PostgreSQL |
 | Higgs TTS 3, Higgs Avatar | Boson AI | Interviewers' voices and talking faces |
-| Whisper (whisper.cpp) | local | Answer transcripts; Higgs STT as backup |
+| Higgs STT, with whisper.cpp | Boson AI; whisper.cpp local | Answer transcripts |
 | LLM (DeepSeek; OpenAI, Claude, Gemini as backups) | API | Writes questions, checks whether an answer is finished, writes the report |
 | PostgreSQL | local | Interviews, transcripts, reports |
 

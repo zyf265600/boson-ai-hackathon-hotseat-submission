@@ -9,6 +9,10 @@ dist/
 .vscode/
 .idea/
 logs/
-.cache/
+# The fixed lines' audio and avatar videos are committed (rendered with our voices);
+# the Whisper model is downloaded at setup (see README).
+.cache/*
+!.cache/avatar/
+!.cache/tts/
 corpus/README.md
 corpus/candidate-scripts/README.md
