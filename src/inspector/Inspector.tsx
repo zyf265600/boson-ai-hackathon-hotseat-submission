@@ -304,10 +304,10 @@ export function Inspector() {
           <span className="insp-pill live">● live</span>
         )}
         <span
-          className={`insp-pill ${state.llm.test === null ? "" : state.llm.test ? "mode-test" : "mode-product"}`}
+          className={`insp-pill ${state.llm.backup === null ? "" : state.llm.backup ? "mode-backup" : "mode-single"}`}
           title="From the LLM check before Join"
         >
-          {modeLabel(state.llm.test)} · Orchestrator: {state.llm.provider ?? "unknown"}
+          {modeLabel(state.llm.backup)} · Orchestrator: {state.llm.provider ?? "unknown"}
         </span>
         <span className={`insp-pill phase-${state.phase}`}>stage: {PHASE_LABELS[state.phase]}</span>
         <span className="insp-pill">speaker: {state.floor ? PEOPLE[state.floor].name : "nobody"}</span>

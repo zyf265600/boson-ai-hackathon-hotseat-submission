@@ -35,7 +35,7 @@ import { BosonError, createRealtimeToken, lineAudio, lineVideo, streamAvatar, st
 import { checkProviders, llmStatus, providerName } from "./llm";
 import { companyPronunciation, spokenText } from "./pronounce";
 import { avatarLog, saveAvatarLine, saveSessionLog, ttsLog, type SessionRecord } from "./testLogs";
-import { AVATAR, TEST } from "./config";
+import { AVATAR, BACKUP, TEST } from "./config";
 
 const PORT = Number(process.env.PORT ?? 3100);
 
@@ -562,6 +562,6 @@ app.post("/api/interviews/:id/next-question", async (req, res) => {
 await migrate();
 app.listen(PORT, () => {
   console.log(
-    `HotSeat server on http://localhost:${PORT}${TEST ? " · TEST=true: Orchestrator on DeepSeek only" : ""}${AVATAR ? " · AVATAR=true: talking-head panelists" : ""}`,
+    `HotSeat server on http://localhost:${PORT}${TEST ? " · TEST=true: copies under logs/" : ""}${BACKUP ? " · BACKUP=true: backup LLMs on" : " · Orchestrator on DeepSeek only"}${AVATAR ? " · AVATAR=true: talking-head panelists" : ""}`,
   );
 });

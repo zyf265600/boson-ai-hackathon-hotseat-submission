@@ -40,9 +40,9 @@ export const FLOOR_LABELS: Record<FloorKind, string> = {
   prompt: "a silence prompt",
 };
 
-/** Plain-words name for the TEST vs product setting (TEST in hotseat/.env). */
-export const modeLabel = (test: boolean | null) =>
-  test === null ? "unknown" : test ? "TEST (DeepSeek only)" : "PRODUCT (LLM fallback on)";
+/** Plain-words name for the BACKUP setting in hotseat/.env: backup LLMs on, or DeepSeek only. */
+export const modeLabel = (backup: boolean | null) =>
+  backup === null ? "unknown" : backup ? "backup LLMs on" : "DeepSeek only";
 
 export type Interviewer = Exclude<Speaker, "candidate">;
 
@@ -232,8 +232,8 @@ export interface InspectorState {
   /** Set once the call is over; the inspector freezes its clock here. */
   endedAt: number | null;
   endReason: string;
-  /** From the LLM check before Join: TEST or product setting, and who answers the Orchestrator. null = unknown. */
-  llm: { test: boolean | null; provider: string | null };
+  /** From the LLM check before Join: backup LLMs on (BACKUP), and who answers the Orchestrator. null = unknown. */
+  llm: { backup: boolean | null; provider: string | null };
   /** Difficulty picked in the lobby for each round's follow-up (index 0 = round 1). */
   difficulties: Difficulty[];
   /** The prep room's settings (names and voices of the panel), from the interview_settings event. */

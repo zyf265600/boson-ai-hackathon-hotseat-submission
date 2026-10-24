@@ -14,7 +14,7 @@ export interface SessionRecord {
   endedAt: number | null;
   endReason: string;
   difficulties: string[];
-  llm?: { test: boolean | null; provider: string | null };
+  llm?: { backup: boolean | null; provider: string | null };
   /** The prep room's settings (language, role, company, each seat's voice and name); older records have none. */
   settings?: InterviewSettings;
   memory: { id: number; speaker: Speaker; text: string }[];
@@ -75,7 +75,7 @@ function markdown(r: SessionRecord): string {
     `- Follow-up difficulty: ${r.difficulties.map((d, i) => `${ASKERS[i] ? PEOPLE[ASKERS[i].speaker].name : `asker ${i + 1}`} ${d}`).join(", ")}`,
     `- Panel: ${SEATS.map((seat) => `${settings.seats[seat].name} (${PEOPLE[seat].role}, voice ${voiceLabel(settings.seats[seat].voice)})`).join(", ")}`,
     `- Language: ${settings.language} · Role: ${settings.role}${settings.company ? ` at ${settings.company}` : ""}`,
-    `- Mode: ${r.llm?.test === undefined || r.llm.test === null ? "unknown" : r.llm.test ? "TEST (DeepSeek only)" : "PRODUCT (LLM fallback on)"} · Orchestrator on ${r.llm?.provider ?? "unknown"}`,
+    `- LLMs: ${r.llm?.backup === undefined || r.llm.backup === null ? "unknown" : r.llm.backup ? "backup LLMs on" : "DeepSeek only"} · Orchestrator on ${r.llm?.provider ?? "unknown"}`,
     "",
     "## Conversation (what the Orchestrator reads)",
     "",

@@ -1,6 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import type { QuestionMode } from "../shared/questions";
-import { TEST } from "./config";
+import { BACKUP } from "./config";
 
 type ProviderId = "deepseek" | "openai" | "claude" | "gemini";
 
@@ -132,10 +132,10 @@ const PROVIDERS: Record<ProviderId, Provider> = {
 };
 
 /**
- * Fallback order; LLM_ORDER in .env overrides it, e.g. "claude,deepseek".
- * TEST=true locks the Orchestrator to DeepSeek: no fallback, lowest cost.
+ * Fallback order with BACKUP=true; LLM_ORDER in .env overrides it, e.g. "claude,deepseek".
+ * Without BACKUP the Orchestrator uses DeepSeek only: no fallback, lowest cost.
  */
-const ORDER: ProviderId[] = (TEST ? "deepseek" : (process.env.LLM_ORDER ?? "deepseek,openai,claude,gemini"))
+const ORDER: ProviderId[] = (BACKUP ? (process.env.LLM_ORDER ?? "deepseek,openai,claude,gemini") : "deepseek")
   .split(",")
   .map((s) => s.trim().toLowerCase())
   .filter((s): s is ProviderId => s in PROVIDERS);
@@ -214,11 +214,11 @@ export function checkProviders(): Promise<boolean> {
 }
 
 /**
- * For the lobby and the inspector: TEST or product setting, who answers the
+ * For the lobby and the inspector: whether backup LLMs are on (BACKUP), who answers the
  * Orchestrator's calls, and why each provider failed the last check.
  */
-export function llmStatus(): { test: boolean; provider: string | null; errors: string[] } {
-  return { test: TEST, provider: active ? `${active.id} (${active.model})` : null, errors: lastErrors };
+export function llmStatus(): { backup: boolean; provider: string | null; errors: string[] } {
+  return { backup: BACKUP, provider: active ? `${active.id} (${active.model})` : null, errors: lastErrors };
 }
 
 /** The provider calls go to: the checked one, else the first with a key. */

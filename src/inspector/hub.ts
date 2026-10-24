@@ -53,7 +53,7 @@ function emptyState(): InspectorState {
     startedAt: null,
     endedAt: null,
     endReason: "",
-    llm: { test: null, provider: null },
+    llm: { backup: null, provider: null },
     difficulties: [],
     settings: DEFAULT_SETTINGS,
     phase: "idle",
@@ -110,7 +110,7 @@ export class InspectorHub {
     this.panelMs = 0;
     this.panelSince = null;
     this.say("Interview started");
-    this.say(`Mode: ${modeLabel(llm.test)} · Orchestrator on ${llm.provider ?? "unknown"}`);
+    this.say(`LLMs: ${modeLabel(llm.backup)} · Orchestrator on ${llm.provider ?? "unknown"}`);
     // The follow-up difficulty is logged with the panel's names once the settings arrive (interview_settings).
     this.startMeters();
   }
@@ -268,9 +268,9 @@ export class InspectorHub {
           `Orchestrator: round ${e.round} question ready in ${e.ms} ms on ${e.result.provider ?? "unknown"}; ` +
             `last answer ${e.result.assessment ?? "not judged"} → emotion <${e.result.emotion}>`,
         );
-        // TEST=true must never leave DeepSeek; flag it loudly if it ever does.
-        if (this.state.llm.test && !e.result.provider?.startsWith("deepseek")) {
-          this.error(`TEST=true, but round ${e.round} was answered by ${e.result.provider ?? "an unknown model"}`);
+        // Without BACKUP it must never leave DeepSeek; flag it loudly if it ever does.
+        if (this.state.llm.backup === false && !e.result.provider?.startsWith("deepseek")) {
+          this.error(`BACKUP is off, but round ${e.round} was answered by ${e.result.provider ?? "an unknown model"}`);
         }
         break;
       }

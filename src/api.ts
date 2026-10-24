@@ -12,11 +12,11 @@ export interface Turn {
   text: string;
 }
 
-/** The server's LLM check: TEST or product setting, the provider in use, why others failed. */
+/** The server's LLM check: backup LLMs on or not (BACKUP), the provider in use, why others failed. */
 export interface LlmStatus {
   ok: boolean;
-  /** null when the server did not answer. */
-  test: boolean | null;
+  /** BACKUP=true on the server; null when the server did not answer. */
+  backup: boolean | null;
   provider: string | null;
   errors: string[];
 }
@@ -66,7 +66,7 @@ export async function checkLlm(): Promise<LlmStatus> {
   } catch (err) {
     return {
       ok: false,
-      test: null,
+      backup: null,
       provider: null,
       errors: [`The HotSeat server did not answer: ${(err as Error).message}`],
     };

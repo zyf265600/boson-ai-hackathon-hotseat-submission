@@ -38,8 +38,8 @@ export function ServiceDialog({ onRetry, onClose, checking, status }: ServiceDia
         </span>
         <h2 id="service-dialog-title">Service temporarily unavailable</h2>
         <p id="service-dialog-text" className="muted">
-          {status?.test
-            ? "The server runs with TEST=true, which uses DeepSeek only, and DeepSeek did not answer. No other model is tried."
+          {status?.backup === false
+            ? "The server runs with BACKUP off, which uses DeepSeek only, and DeepSeek did not answer. No other model is tried."
             : "None of the Orchestrator's language models answered."}{" "}
           Please try again in a few minutes.
         </p>

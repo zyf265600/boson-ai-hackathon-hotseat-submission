@@ -342,12 +342,12 @@
   color: #81c995;
 }
 
-.insp-pill.mode-test {
+.insp-pill.mode-single {
   border-color: #b06000;
   color: #fdd663;
 }
 
-.insp-pill.mode-product {
+.insp-pill.mode-backup {
   border-color: #1e8e3e;
   color: #81c995;
 }

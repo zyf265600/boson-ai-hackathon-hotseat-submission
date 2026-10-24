@@ -271,7 +271,7 @@ export default function App() {
     const valid = checkSettings(settings);
     const checked = typeof valid === "string" ? DEFAULT_SETTINGS : valid;
     h.reset(sessionId.current, difficulties, withInspector, {
-      test: status?.test ?? null,
+      backup: status?.backup ?? null,
       provider: status?.provider ?? null,
     });
     const iv = new Interview(
